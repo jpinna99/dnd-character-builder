@@ -1,0 +1,358 @@
+{
+    "name": "Soveliss Nailo",
+    "level": 1,
+    "age": 25,
+    "gender": "male",
+    "alignment": "lawful good",
+    "size": "medium",
+    "speed": 30,
+    "languages": [
+        "common",
+        "elvish",
+        "infernal",
+        "abyssal"
+    ],
+    "race": "elf",
+    "subrace": "drow",
+    "DnDclass": "warlock",
+    "background": "sage",
+    "HP": {
+        "current": 10,
+        "max": 10,
+        "temp": 0
+    },
+    "armor_class": 12,
+    "proficiency_bonus": 2,
+    "initiative_bonus": 1,
+    "ability_scores": {
+        "strength": {
+            "base score": 8,
+            "modifier": -1
+        },
+        "dexterity": {
+            "base score": 12,
+            "modifier": 1
+        },
+        "constitution": {
+            "base score": 14,
+            "modifier": 2
+        },
+        "intelligence": {
+            "base score": 13,
+            "modifier": 1
+        },
+        "wisdom": {
+            "base score": 12,
+            "modifier": 1
+        },
+        "charisma": {
+            "base score": 16,
+            "modifier": 3
+        }
+    },
+    "saving_throws": {
+        "strength": -1,
+        "dexterity": 1,
+        "constitution": 2,
+        "intelligence": 1,
+        "wisdom": 3,
+        "charisma": 5
+    },
+    "skills": {
+        "acrobatics": 1,
+        "animal handling": 1,
+        "arcana": 3,
+        "athletics": -1,
+        "deception": 3,
+        "history": 3,
+        "insight": 1,
+        "intimidation": 5,
+        "investigation": 3,
+        "medicine": 1,
+        "nature": 1,
+        "perception": 3,
+        "performance": 3,
+        "persuasion": 3,
+        "religion": 1,
+        "sleight of hand": 1,
+        "stealth": 1,
+        "survival": 1
+    },
+    "proficiencies": {
+        "armor": "light armor",
+        "weapons": [
+            "simple weapons",
+            "rapiers",
+            "shortswords",
+            "hand crossbows"
+        ],
+        "tools": null,
+        "saving throws": [
+            "wisdom",
+            "charisma"
+        ],
+        "skills": [
+            "intimidation",
+            "investigation",
+            "perception",
+            "arcana",
+            "history"
+        ]
+    },
+    "equipment": {
+        "weapons": {
+            "light crossbow": {
+                "quantity": 1,
+                "damage": "1d8, piercing",
+                "properties": "Two-Handed, Range, Loading, Ammunition"
+            },
+            "crossbow bolts": {
+                "quantity": 20
+            },
+            "quarterstaff": {
+                "quantity": 1,
+                "damage": "1d6, (one-handed), 1d8 (two-handed)",
+                "properties": "Versatile"
+            },
+            "dagger": {
+                "quantity": 1,
+                "damage": "1d4, piercing",
+                "properties": "Finesse, Light, Range, Thrown"
+            }
+        },
+        "armor": "leather",
+        "tools": [],
+        "active": {
+            "weapons": [
+                "dagger",
+                "dagger"
+            ],
+            "armor": "leather",
+            "shield": false,
+            "tools": []
+        },
+        "arcane focus": "monkey paw",
+        "dungeoneer's pack": {
+            "backpack": 1,
+            "crowbar": 1,
+            "hammer": 1,
+            "piton": 10,
+            "torch": 10,
+            "tinderbox": 1,
+            "rations": 10,
+            "waterskin": 1,
+            "hempen rope (ft)": 50
+        },
+        "bottle of black ink": 1,
+        "quill": 1,
+        "small knife": 1,
+        "letter from dead colleague posing question I have been unable to answer": 1,
+        "set of common clothes": 1,
+        "pouch containing 10 gp": 1
+    },
+    "wealth": {
+        "gold": 10
+    },
+    "spells": {
+        "cantrips": {
+            "known": 2,
+            "cantrip list": [
+                {
+                    "name": "Eldritch Blast",
+                    "desc": "<p>A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.</p><p>The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</p>",
+                    "page": "phb 237",
+                    "range": "120 feet",
+                    "components": "V, S",
+                    "ritual": "no",
+                    "duration": "Instantaneous",
+                    "concentration": "no",
+                    "casting_time": "1 action",
+                    "level": "Cantrip",
+                    "school": "Evocation",
+                    "class": "Warlock"
+                },
+                {
+                    "name": "Chill Touch",
+                    "desc": "<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can\u2019t regain hit points until the start of your next turn. Until then, the hand clings to the target.</p><p>If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.</p><p>This spell\u2019s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+                    "page": "phb 221",
+                    "range": "120 feet",
+                    "components": "V, S",
+                    "ritual": "no",
+                    "duration": "1 round",
+                    "concentration": "no",
+                    "casting_time": "1 action",
+                    "level": "Cantrip",
+                    "school": "Necromancy",
+                    "class": "Sorcerer, Warlock, Wizard"
+                },
+                {
+                    "name": "Dancing Lights",
+                    "desc": "<p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p><p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell\u2019s range.</p>",
+                    "page": "phb 230",
+                    "range": "120 feet",
+                    "components": "V, S, M",
+                    "material": "A bit of phosphorus or wychwood, or a glowworm.",
+                    "ritual": "no",
+                    "duration": "Up to 1 minute",
+                    "concentration": "yes",
+                    "casting_time": "1 action",
+                    "level": "Cantrip",
+                    "school": "Evocation",
+                    "class": "Bard, Sorcerer, Wizard"
+                }
+            ]
+        },
+        "spells": {
+            "known": 2,
+            "spell list": [
+                {
+                    "name": "Expeditious Retreat",
+                    "desc": "This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.",
+                    "page": "phb 238",
+                    "range": "Self",
+                    "components": "V, S",
+                    "ritual": "no",
+                    "duration": "Up to 10 minutes",
+                    "concentration": "yes",
+                    "casting_time": "1 bonus action",
+                    "level": "1st-level",
+                    "school": "Transmutation",
+                    "class": "Sorcerer, Warlock, Wizard"
+                },
+                {
+                    "name": "Ice Knife",
+                    "desc": "<p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.</p>",
+                    "higher_level": "<p>When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.</p>",
+                    "page": "ee pc 19",
+                    "range": "60 feet",
+                    "components": "S, M",
+                    "material": "A drop of water or piece of ice.",
+                    "ritual": "no",
+                    "duration": "Instantaneous",
+                    "concentration": "no",
+                    "casting_time": "1 action",
+                    "level": "1st-level",
+                    "school": "Conjuration",
+                    "class": "Druid, Sorcerer, Wizard"
+                }
+            ]
+        },
+        "spell slots": {
+            "available": 1,
+            "maximum": 1
+        },
+        "slot level": 1
+    },
+    "vulnerabilities": [],
+    "immunities": [
+        "sleep"
+    ],
+    "resistances": [],
+    "has_inspiration": false,
+    "drow_features": {
+        "darkvision": 120,
+        "sunlight sensivity": "disadvanatage on attack rolls and perception checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.",
+        "drow magic": [
+            "dancing lights",
+            "faerie fire",
+            "darkness"
+        ]
+    },
+    "drow_proficiencies": {
+        "weapons": [
+            "rapiers",
+            "shortswords",
+            "hand crossbows"
+        ]
+    },
+    "elf_features": {
+        "darkvision": 60,
+        "keen senses": "proficiency in perception",
+        "fey ancestry": [
+            "advantage on saving throws against being charmed",
+            "magic cannot put you to sleep"
+        ],
+        "trance": "deeply meditate in semiconscious state for 4 hours per day",
+        "languages": [
+            "common",
+            "elvish"
+        ]
+    },
+    "saving_throw_advantages": [
+        "charmed"
+    ],
+    "sage_skill_proficiencies": [
+        "arcana",
+        "history"
+    ],
+    "sage_equipment": {
+        "bottle of black ink": 1,
+        "quill": 1,
+        "small knife": 1,
+        "letter from dead colleague posing question I have been unable to answer": 1,
+        "set of common clothes": 1,
+        "pouch containing 10 gp": 1
+    },
+    "shadow_armor": {
+        "name": "shadow armor",
+        "level": 1,
+        "description": "\n            At 1st level, you are protected by the Reaper's shadows. Shadows swirl around you whenever you are in danger, allowing you to mitigate some harm. When hit by an attack, you may use your reaction to give you resistance to the damage for the triggering attack. You may do this a number of times equal to your Charisma modifier before taking a long rest",
+        "action type": "1 reaction",
+        "effect": "resistance to damage for triggering attack",
+        "number of uses": "number up to Charisma modifier",
+        "number of uses remaining": 3
+    },
+    "reapers_blade": {
+        "name": "reaper's blade",
+        "level": 1,
+        "description": "At 1st level, the Reaper gives you access to one of their weapons, the Reaper's Blade. As an action, you may summon the Reaper's blade to your side. It shares the same space as you, hovering near your back, and takes the appearance of your choice although typically a scythe. When in your space, the blade moves with you. The blade lasts for 1 minute before returning to your patron. You may use a bonus action to move the blade up to 20ft away, up to maximum of 50ft from you. As part of that same bonus action, you may have the Blade attack a target within 10ft of it. Make a melee spell attack against the target and on a hit, deal 1d8 Necrotic damage (increases at levels 6 and 14). If the scythe enters an anti-magic field, it falls to the ground and assumes the properties of the weapon you created it as until leaves the field. If targeted by dispel magic, it disappears back to your Patron and must be summoned again. You may summon the blade a number of times equal to your Charisma modifier between long rests.",
+        "higher levels": "At 6th level, the damage increases to 2d8 and at 14th level it becomes 3d8",
+        "action type": {
+            "1 action": "summons the blade to your side",
+            "1 bonus action": "move up to 20ft and attack"
+        },
+        "number of uses": "number up to Charisma modifier",
+        "number of uses remaining": 3
+    },
+    "dark_tear": {
+        "name": "dark tear",
+        "level": 6,
+        "description": "At 6th Level you may tear open a hole in time and space, allowing you safe passage to another location. As an action, you may use the Reaper's dark hold on time to carve a tear in time and space within 15 ft. of you. This tear will allow you to travel through it to another location you can see within 500 feet instantaneously, as reality folds to accommodate you. The tear remains open for 1 minute, or until you lose/drop concentration. Others may attempt to pass through the tear, making a Wisdom saving throw against your spell save DC. On a failed save, they take 2d6 Necrotic damage and are knocked prone on the other side of the tear. On a successful save, they teleport to an unoccupied space within 5 feet of your exit location. The tear can not teleport you into an anti-magic field and can be destroyed by dispel magic. Once you use this ability, you can not do so again until after a short or long rest.",
+        "action type": "1 action",
+        "concentration": true,
+        "number of uses": "once per short or long rest"
+    },
+    "reapers_reach": {
+        "name": "reaper's reach",
+        "level": 10,
+        "description": "At 10th Level, your connection to your patron allows you better use of their instrument. You may now cast spells through your Reaper's Blade when it is away from you, as if you were standing in the spot it is in. You may now also move the Blade up to a maximum of 80 ft. away from you now, and call it back to your side as an action."
+    },
+    "angel_of_death": {
+        "name": "angel of death",
+        "level": 14,
+        "description": "At 14th level, your connection to the Reaper has reached its pinnacle. When you summon your Reaper's Blade, you may choose to summon the Reaper's Avatar, a spectral floating figure garbed in shadows, along with it. You spend an additional charge of your Reaper's Blade to summon the avatar. The Reaper's Avatar takes up the Reaper's Blade and acts on your turn. It can move 30 ft on your turn and make two weapon attacks using the Reaper's Blade and uses your melee spell attack. It does not have a limit to how far it can go, but still can only remain on this plane for 1 minute before returning. The Avatar has an AC of 17 and an HP of 5 times your charisma score. If targeted by dispel magic, it will not disappear but instead will be stunned for 1 round. It will not enter an anti-magic field even if commanded to and will use its reaction to teleport to a safe distance if one is generated near it. After you summon the Avatar and he is dismissed, destroyed, or expires, you cannot summon him again until you take a long rest.",
+        "number of uses": "once per long rest",
+        "action type": "1 action, 2 charges of Reaper's Blade",
+        "avatar abilities": {
+            "speed": 30,
+            "attacks": 2,
+            "armor class": 17,
+            "HP": "5 x my Charisma score"
+        }
+    },
+    "patron": "The Reaper",
+    "invocations": {},
+    "specialty": "Discredited Academic",
+    "ideal": "The path to power and self-improvement is through knowledge.",
+    "flaw": "I am easily distracted by the promise of information.",
+    "bond": "I've been searching my whole life for the answer to one question.",
+    "appearance": {
+        "skin color": "purple",
+        "hair color": "grayish black",
+        "height": "5 ft 2 in",
+        "eye color": "green"
+    },
+    "spell_save_DC": 13,
+    "spell_attack_modifier": 5,
+    "darkvision": 120
+}

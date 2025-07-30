@@ -1,0 +1,32 @@
+[
+    {
+        "name":"Agonizing Blast",
+        "prerequisite": "eldritch blast cantrip",
+        "desc": "<p>When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit.</p>"
+    },
+    {
+        "name":"Eldritch Sight",
+        "prerequisite": null,
+        "desc": "<p>You can cast detect magic at will, without expending a spell slot or material components.</p>"
+    },
+    {
+        "name":"Eldritch Spear",
+        "prerequisite": "eldritch blast cantrip",
+        "desc": "<p>When you cast eldritch blast, its range is 300 feet.</p>"
+    },
+    {
+        "name": "Fiendish Vigor",
+        "prerequisite": null,
+        "desc": "<p>You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</p>"
+    },
+    {
+        "name": "Repelling Blast",
+        "prerequisite": "eldritch blast cantrip",
+        "desc": "<p>When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line.</p>"
+    },
+    {
+        "name": "Eldritch Mind",
+        "prerequisite": null,
+        "desc": "<p>You have advantage on Constitution saving throws that you make to maintain your concentration on a spell.</p>"
+    }
+]

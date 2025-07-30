@@ -181,9 +181,7 @@ soveliss.set_charisma_charges()
 with open('soveliss-stats.json', 'w') as soveliss_stats:
     json.dump(soveliss.__dict__, soveliss_stats, indent=4)
 
-# open character json file as python object
-with open('soveliss-stats.json') as soveliss_stats:
-    soveliss_stats = json.load(soveliss_stats)
+
 
 
 

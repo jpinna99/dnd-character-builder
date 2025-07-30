@@ -139,7 +139,7 @@ soveliss.set_charisma_charges()
 
 
 
-# Level up to level 2
+# Level up Soveliss to Level 2
 # soveliss.level_up_2('eldritch mind', 'fiendish vigor')
 
 

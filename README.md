@@ -29,6 +29,9 @@
 1. styles.css --> very basic CSS file, basically just there to add margin spacing (I don't really care about making things pretty)
 2. html files
 3. game notes (for the campaign)
+4. image file depicting character
+5. D&D character sheet in PDF format
+6. Backstory
 
 
 

@@ -31,7 +31,8 @@
 3. game notes (for the campaign)
 4. image file depicting character
 5. D&D character sheet in PDF format
-6. Backstory
+6. Character backstory
+
 
 
 

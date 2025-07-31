@@ -249,6 +249,10 @@
     ],
     "resistances": [],
     "has_inspiration": false,
+    "death_saves": {
+        "successes": [],
+        "failures": []
+    },
     "drow_features": {
         "darkvision": 120,
         "sunlight sensivity": "disadvanatage on attack rolls and perception checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.",

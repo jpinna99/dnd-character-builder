@@ -1,4 +1,5 @@
 import math
+import random
 
 # class definitions
 class Character:
@@ -102,6 +103,10 @@ class Character:
         self.immunities = []
         self.resistances = []
         self.has_inspiration = False
+        self.death_saves = {
+            "successes": [],
+            "failures": []
+        }
     
 # string repr
     def __repr__(self):
@@ -479,3 +484,23 @@ class Character:
             self.wealth[wealth_type] += money
         else:
             self.wealth[wealth_type] += money
+    def roll_death_save(self, roll):
+        if roll == 20:
+            self.death_saves['successes'].append('success')
+            self.death_saves['successes'].append('success')
+        elif roll == 0:
+            self.death_saves['failures'].append('failure')
+            self.death_saves['failures'].append('failure')
+        elif roll >= 10:
+            self.death_saves['successes'].append('success')
+        else:
+            self.death_saves['failures'].append('failure')
+        if len(self.death_saves['successes']) == 3:
+            print('Creature stabilized')
+            self.death_saves['successes'] = []
+            self.death_saves['failures'] = []
+        if len(self.death_saves['failures']) == 3:
+            print('You are dead')
+            self.death_saves['successes'] = []
+            self.death_saves['failures'] = []
+        

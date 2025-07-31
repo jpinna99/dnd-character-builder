@@ -1,4 +1,4 @@
-import json, pprint
+import json, pprint, random
 
 from warlock_class import Warlock
 from sage_class import Sage
@@ -6,7 +6,7 @@ from elf_class import Elf
 from drow_class import Drow
 from reaper_class import Reaper
 
-
+from dice_rolls import *
 
 # open master spell list and save as variable
 with open('formatted-spell-list.json', 'r', encoding='utf-8') as master_spell_list:
@@ -148,6 +148,9 @@ soveliss.set_charisma_charges()
 ##########################################################################################
 ########################################################################################## 
 # GAME PLAY
+
+
+
 
 
 

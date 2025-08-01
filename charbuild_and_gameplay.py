@@ -105,7 +105,6 @@ soveliss.calculate_skills()
 soveliss.choose_starting_equipment()
 soveliss.equip_armor('leather')
 soveliss.equip_weapon('dagger')
-soveliss.equip_weapon('dagger')
 soveliss.calculate_armor_class()
 
 # call Warlock methods — HP, patron and choose skill proficiencies and starting spells, set spell save and spell attack mod
@@ -148,8 +147,6 @@ soveliss.set_charisma_charges()
 ##########################################################################################
 ########################################################################################## 
 # GAME PLAY
-
-
 
 
 

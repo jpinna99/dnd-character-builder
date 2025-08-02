@@ -196,7 +196,7 @@ fetch('soveliss-stats.json')
             const parsedData = JSON.parse(JSON.stringify(data.spells.cantrips["cantrip list"]));
             for (let cantrip of parsedData) {
                 let cantripdata = document.createElement('p');
-                cantripdata.innerHTML = JSON.stringify(cantrip);
+                cantripdata.innerHTML = JSON.stringify(cantrip, null, 2);
                 newInfo.appendChild(cantripdata);
                 let spacer = document.createElement('p');
                 spacer.style.marginBottom = '2px';
@@ -214,7 +214,7 @@ fetch('soveliss-stats.json')
             const parsedData = JSON.parse(JSON.stringify(data.spells.spells["spell list"]));
             for (let spell of parsedData) {
                 let spelldata = document.createElement('p');
-                spelldata.innerHTML = JSON.stringify(spell);
+                spelldata.innerHTML = JSON.stringify(spell, null, 2);
                 newInfo.appendChild(spelldata);
                 let spacer = document.createElement('p');
                 spacer.style.marginBottom = '2px';
@@ -233,7 +233,7 @@ fetch('soveliss-stats.json')
             for (let cantrip of parsedCantripData) {
                 if (cantrip.concentration === true || cantrip.concentration == 'yes') {
                     let cantripdata = document.createElement('p');
-                    cantripdata.innerHTML = JSON.stringify(cantrip);
+                    cantripdata.innerHTML = JSON.stringify(cantrip, null, 2);
                     newInfo.appendChild(cantripdata);
                     let spacer = document.createElement('p');
                     spacer.style.marginBottom = '2px';
@@ -245,7 +245,7 @@ fetch('soveliss-stats.json')
             for (let spell of parsedSpellData) {
                 if (spell.concentration === true || spell.concentration == 'yes') {
                     let spelldata = document.createElement('p');
-                    spelldata.innerHTML = JSON.stringify(spell);
+                    spelldata.innerHTML = JSON.stringify(spell, null, 2);
                     newInfo.appendChild(spelldata);
                     let spacer = document.createElement('p');
                     spacer.style.marginBottom = '2px';

@@ -9,7 +9,7 @@ from reaper_class import Reaper
 from dice_rolls import *
 
 # open master spell list and save as variable
-with open('formatted-spell-list.json', 'r', encoding='utf-8') as master_spell_list:
+with open('formatted-master-spell-list.json', 'r', encoding='utf-8') as master_spell_list:
     master_spell_list = json.load(master_spell_list)
 
 
@@ -78,9 +78,9 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
             print("Crossbow fired")
             self.equipment["weapons"]['crossbow bolts']["quantity"] -= 1
 
-    def level_up_2(self, invocation1, invocation2):
+    def level_up_2(self, invocation1, invocation2, additional_spell):
         self.spells['spells']['known'] = 3
-        self.spells['spells']['spell slots'] = {
+        self.spells['spell slots'] = {
             "available": 2,
             "maximum": 2
         }
@@ -89,6 +89,8 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
             'invocations list': []
         }
         self.add_warlock_invocations(invocation1, invocation2)
+        self.add_spell(additional_spell)
+        self.set_HP(17)    # add 5 HP + 2 for con mod
 
         
 
@@ -139,7 +141,7 @@ soveliss.set_charisma_charges()
 
 
 # Level up Soveliss to Level 2 --- increase to known spells, spell slots, gain invocations
-# soveliss.level_up_2('eldritch mind', 'fiendish vigor')
+soveliss.level_up_2('eldritch mind', 'fiendish vigor', 'hex')
 
 
 
@@ -147,6 +149,12 @@ soveliss.set_charisma_charges()
 ##########################################################################################
 ########################################################################################## 
 # GAME PLAY
+# 8/1/2025 Session:
+  # soveliss.take_long_rest()  # long rest, cuddling my tome, in the inn near The Bloated Goat
+  # soveliss.use_shadow_armor()  # instinctive use of shadow armor when Titus woke me up hungover
+  # soveliss.take_damage(1)  # damage from gust of wind in the cavern
+  # soveliss.use_reapers_blade()   # against the kobolds
+  # soveliss.take_long_rest()   # after we got back to Oakdale
 
 
 

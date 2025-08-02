@@ -2,7 +2,7 @@ from character_class import Character
 import json
 
 
-with open('formatted-spell-list.json', 'r', encoding='utf-8') as master_spell_list:
+with open('formatted-master-spell-list.json', 'r', encoding='utf-8') as master_spell_list:
     master_spell_list = json.load(master_spell_list)
 
 with open('formatted-invocations-list.json', 'r', encoding='utf-8') as invocations_list:
@@ -108,6 +108,10 @@ class Warlock(Character):
         for spell in master_spell_list:
             if spell['name'].lower() == spell2.lower():
                 self.spells['spells']['spell list'].append(spell) 
+    def add_spell(self, spell_name):
+        for spell in master_spell_list:
+            if spell['name'].lower() == spell_name.lower() and 'warlock' in spell['class'].lower():
+                self.spells['spells']['spell list'].append(spell)
     def cast_spell(self, spell):
         if self.spells['spell slots']['available'] == 0:
             print("Cannot cast spell. No spell slots remaining")

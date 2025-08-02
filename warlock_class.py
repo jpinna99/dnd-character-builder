@@ -10,6 +10,7 @@ with open('formatted-invocations-list.json', 'r', encoding='utf-8') as invocatio
 
 
 class Warlock(Character):
+    # constructor
     def __init__(self, name):
         super().__init__(name)
         self.DnDclass = 'warlock'
@@ -43,6 +44,7 @@ class Warlock(Character):
             "skills": []
         }
 
+    # getters
     def get_patron(self):
         return self.patron
     def get_invocations(self):
@@ -52,6 +54,7 @@ class Warlock(Character):
     def get_spell_attack_modifier(self):
         return self.spell_attack_modifier
 
+    # setters
     def set_patron(self, patron):
         if isinstance(patron, str):
             self.patron = patron
@@ -62,6 +65,7 @@ class Warlock(Character):
     def set_spell_attack_modifier(self):
         self.spell_attack_modifier = self.proficiency_bonus + self.ability_scores['charisma']['modifier']
 
+    # choose proficiencies, invocations, spells, etc.
     def choose_warlock_skill_proficiencies(self, skill1, skill2):
         skill1 = skill1.lower()
         skill2 = skill2.lower()

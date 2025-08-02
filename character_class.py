@@ -458,13 +458,11 @@ class Character:
             print('You do not have this weapon')
         else:
             self.equipment['active']['weapons'].append(weapon)
-    
     def unequip_weapon(self, weapon):
         if weapon not in self.equipment['active']['weapons']:
             print('Weapon not equipped')
         else:
             self.equipment['active']['weapons'].remove(weapon)
-
     def spend_money(self, wealth_type, money):
         if type(money) != int and type(wealth_type) != str:
             print('Input must be integer')

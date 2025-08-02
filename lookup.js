@@ -439,10 +439,12 @@ fetch('soveliss-stats.json')
             const SovReapersBlade = document.createElement('p');
             SovReapersBlade.innerHTML = `Reaper's Blade: You may use a bonus action to move the blade up to 20ft away, up to maximum of 50ft from you. As part of that same bonus action, you may have the Blade attack a target within 10ft of it. Make a melee spell attack against the target and on a hit, deal 1d8 Necrotic damage (increases at levels 6 and 14).`;
             SovBonusActions.appendChild(SovReapersBlade);
-            const SovBonusActionSpells = document.createElement('p');
+            const SovBonusActionSpells = document.createElement('div');
             for (let spell of data.spells.spells['spell list']) {
                 if (spell['casting_time'] === "1 bonus action") {
-                    SovBonusActionSpells.innerHTML = `${JSON.stringify(spell["name"])}: ${JSON.stringify(spell["desc"])}`;
+                    let newspell = document.createElement('p')
+                    newspell.innerHTML = `${JSON.stringify(spell["name"])}: ${JSON.stringify(spell["desc"])}`;
+                    SovBonusActionSpells.appendChild(newspell);
                 }
             }
             SovBonusActions.appendChild(SovBonusActionSpells);

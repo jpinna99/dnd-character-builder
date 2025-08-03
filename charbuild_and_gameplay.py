@@ -79,6 +79,7 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
             self.equipment["weapons"]['crossbow bolts']["quantity"] -= 1
 
     def level_up_2(self, invocation1, invocation2, additional_spell):
+        self.level = 2
         self.spells['spells']['known'] = 3
         self.spells['spell slots'] = {
             "available": 2,

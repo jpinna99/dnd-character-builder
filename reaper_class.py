@@ -6,8 +6,7 @@ class Reaper(Character):
         self.shadow_armor = {
             'name': 'shadow armor',
             'level': 1,
-            'description': """
-            At 1st level, you are protected by the Reaper's shadows. Shadows swirl around you whenever you are in danger, allowing you to mitigate some harm. When hit by an attack, you may use your reaction to give you resistance to the damage for the triggering attack. You may do this a number of times equal to your Charisma modifier before taking a long rest""",
+            'description': """At 1st level, you are protected by the Reaper's shadows. Shadows swirl around you whenever you are in danger, allowing you to mitigate some harm. When hit by an attack, you may use your reaction to give you resistance to the damage for the triggering attack. You may do this a number of times equal to your Charisma modifier before taking a long rest""",
             'action type': '1 reaction',
             'effect': 'resistance to damage for triggering attack',
             'number of uses': 'number up to Charisma modifier',

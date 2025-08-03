@@ -481,7 +481,7 @@ class Character:
         elif wealth_type not in self.wealth:
             print(f'You do not have any {wealth_type}')
         elif self.wealth[wealth_type] - money < 0:
-            print(f'You do not have enough {wealth_type}')
+            print(f'You do not have enough {wealth_type}. You only have {self.wealth[wealth_type]} {wealth_type}')
         else:
             self.wealth[wealth_type] -= money
     def make_money(self, wealth_type, money):

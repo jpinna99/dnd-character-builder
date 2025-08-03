@@ -184,6 +184,9 @@ fetch('soveliss-stats.json')
             const SovInspo = document.createElement('p');
             SovInspo.innerHTML = JSON.stringify(data.has_inspiration, null, 2);
             newInfo.appendChild(SovInspo);
+            const SovInspoDie = document.createElement('p');
+            SovInspoDie.innerHTML = JSON.stringify(data.inspiration_die, null, 2);
+            newInfo.appendChild(SovInspoDie);
             infoContainer.appendChild(newInfo);
         })
 

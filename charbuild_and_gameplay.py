@@ -151,11 +151,12 @@ soveliss.level_up_2('eldritch mind', 'fiendish vigor', 'hex')
 ########################################################################################## 
 # GAME PLAY
 # 8/1/2025 Session:
-  # soveliss.take_long_rest()  # long rest, cuddling my tome, in the inn near The Bloated Goat
-  # soveliss.use_shadow_armor()  # instinctive use of shadow armor when Titus woke me up hungover
-  # soveliss.take_damage(1)  # damage from gust of wind in the cavern
+  # soveliss.take_long_rest()   # long rest, cuddling my tome, in the inn near The Bloated Goat
+  # soveliss.use_shadow_armor()   # instinctive use of shadow armor when Titus woke me up hungover
+  # soveliss.take_damage(1)   # damage from gust of wind in the cavern
   # soveliss.use_reapers_blade()   # against the kobolds
   # soveliss.take_long_rest()   # after we got back to Oakdale
+
 
 
 

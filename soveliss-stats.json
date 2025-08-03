@@ -264,6 +264,7 @@
     ],
     "resistances": [],
     "has_inspiration": false,
+    "inspiration_die": "",
     "death_saves": {
         "successes": [],
         "failures": []

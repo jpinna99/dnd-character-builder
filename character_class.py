@@ -103,6 +103,7 @@ class Character:
         self.immunities = []
         self.resistances = []
         self.has_inspiration = False
+        self.inspiration_die = ""
         self.death_saves = {
             "successes": [],
             "failures": []
@@ -425,11 +426,21 @@ class Character:
 
 
 # toggles and counters
-    def gain_inspiration(self):
-        self.has_inspiration = True
+    def gain_inspiration(self, inspiration_die):
+        if type(inspiration_die) != str:
+            print("Inspiration die must be in following format: '1d4', '1d6', '1d8'")
+        elif len(inspiration_die) != 3 or inspiration_die[1] != 'd':
+            print("Inspiration die must be in following format: '1d4', '1d6', '1d8'")
+        else:
+            self.has_inspiration = True
+            self.inspiration_die = inspiration_die
     def use_inspiration(self):
-        self.has_inspiration = False
-        print("Inspiration gains additional 1d8")
+        if self.has_inspiration == False:
+            print("You do not have inspiration")
+        else:
+            self.has_inspiration = False
+            print(f"Inspiration gains additional {self.inspiration_die}")
+            self.inspiration_die = ""
     def take_damage(self, damage):
         HP_remaining = (self.HP['current'] + self.HP['temp']) - damage
         if HP_remaining <= 0:

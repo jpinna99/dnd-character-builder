@@ -93,6 +93,38 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
         self.add_spell(additional_spell)
         self.set_HP(17)    # add 5 HP + 2 for con mod
 
+    # method below is specific to sorcerer as new_class
+    def multiclass(self, original_class, new_class):
+        # separate spells by class: 
+        original_class_spells = self.__dict__.pop("spells")
+        self.__dict__["spells"] = {}
+        self.__dict__["spells"][original_class] = original_class_spells
+        self.__dict__["spells"][new_class] = {}
+        # separate levels and have a combined key:
+        original_class_level = self.__dict__.pop("level")
+        new_class_level = 1
+        self.__dict__["level"] = {original_class: original_class_level,
+                                new_class: new_class_level}
+        # calc prof bonus: 
+        # self.__dict__.proficiency_bonus = self.level[original_class] + self.level[new_class]
+        level_bonus_table = {1 + 4*i: 2 + i for i in range(100)}
+        for key, value in level_bonus_table.items():
+            if original_class_level + new_class_level >= int(key):
+                self.__dict__["proficiency_bonus"] = value
+
+        # separate proficiencies by class: 
+        # new class proficiencies (armor, weapons, tools, saving throws, skills)
+        warlock_proficiencies = self.__dict__.pop('proficiencies')
+        self.__dict__["proficiencies"] = {}
+        self.__dict__["proficiencies"][original_class] = warlock_proficiencies
+        self.__dict__["proficiencies"][new_class] = {}
+
+        # figure out HP and hit dice (assume sorcerer)
+        original_HP = self.__dict__["HP"]["max"]
+        new_HP = 6 + self.__dict__["ability_scores"]["constitution"]["modifier"]
+        total_HP = original_HP + new_HP
+        self.set_HP(total_HP)
+
         
 
 # class instantiation
@@ -146,16 +178,9 @@ soveliss.level_up_2('eldritch mind', 'fiendish vigor', 'hex')
 
 
 
-# Sorcerer multiclass functions
-def multiclass(obj, original_class, new_class):
-    pass
-    # separate spells by class: warlock_spells = soveliss.__dict__.pop('spells')
-    # separate levels and have a combined key: warlock_level = soveliss.__dict__.pop('level')
-    # calc prof bonus: obj.proficiency_bonus = obj.level[original_class] + obj.level[new_class]
-        # level_bonus_table = {1 + 4*i: 2 + i for i in range(100)}
-        # print(level_bonus_table)
-    # separate proficiencies by class: warlock_proficiencies = soveliss.__dict__.pop('proficiencies'); new class proficiencies (armor, weapons, tools, saving throws, skills)
-    # figure out HP and hit dice (HP after 1st level as sorcerer: 4 + con mod; hit dice: 1d6)
+# Multiclass Soveliss as SorLock (Sorcerer/Warlock) 
+# soveliss.multiclass('warlock', 'sorcerer')
+
 
 
 ##########################################################################################

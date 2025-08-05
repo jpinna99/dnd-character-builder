@@ -146,6 +146,18 @@ soveliss.level_up_2('eldritch mind', 'fiendish vigor', 'hex')
 
 
 
+# Sorcerer multiclass functions
+def multiclass(obj, original_class, new_class):
+    pass
+    # separate spells by class: warlock_spells = soveliss.__dict__.pop('spells')
+    # separate levels and have a combined key: warlock_level = soveliss.__dict__.pop('level')
+    # calc prof bonus: obj.proficiency_bonus = obj.level[original_class] + obj.level[new_class]
+        # level_bonus_table = {1 + 4*i: 2 + i for i in range(100)}
+        # print(level_bonus_table)
+    # separate proficiencies by class: warlock_proficiencies = soveliss.__dict__.pop('proficiencies'); new class proficiencies (armor, weapons, tools, saving throws, skills)
+    # figure out HP and hit dice (HP after 1st level as sorcerer: 4 + con mod; hit dice: 1d6)
+
+
 ##########################################################################################
 ##########################################################################################
 ########################################################################################## 
@@ -156,10 +168,6 @@ soveliss.level_up_2('eldritch mind', 'fiendish vigor', 'hex')
   # soveliss.take_damage(1)   # damage from gust of wind in the cavern
   # soveliss.use_reapers_blade()   # against the kobolds
   # soveliss.take_long_rest()   # after we got back to Oakdale
-
-
-
-
 
 
 

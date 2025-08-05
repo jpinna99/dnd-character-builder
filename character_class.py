@@ -513,3 +513,18 @@ class Character:
             self.death_saves['successes'] = []
             self.death_saves['failures'] = []
         
+# add items to inventory
+    def add_to_inventory(self, item_name, item_count):
+        if isinstance(item_name, str) and isinstance(item_count, int):
+            self.equipment[item_name] = item_count
+        else:
+            print("Two paramters needed: item_name (string) and item_count (integer)")
+
+# remove/use items 
+    def use_item(self, item_name):
+        if isinstance(item_name, str):
+            if self.equipment.get(item_name, None) == None:
+                print(f"You do not have ***{item_name}*** in your inventory.")
+            else:
+                self.equipment[item_name] -= 1
+                print(f"You successfully used 1 {item_name}")

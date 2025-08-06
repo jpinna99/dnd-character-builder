@@ -78,52 +78,49 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
             print("Crossbow fired")
             self.equipment["weapons"]['crossbow bolts']["quantity"] -= 1
 
-    def level_up_2(self, invocation1, invocation2, additional_spell):
-        self.level = 2
-        self.spells['spells']['known'] = 3
-        self.spells['spell slots'] = {
-            "available": 2,
-            "maximum": 2
-        }
-        self.invocations = {
-            'known': 2,
-            'invocations list': []
-        }
-        self.add_warlock_invocations(invocation1, invocation2)
-        self.add_spell(additional_spell)
-        self.set_HP(17)    # add 5 HP + 2 for con mod
-
     # method below is specific to sorcerer as new_class
     def multiclass(self, original_class, new_class):
         # separate spells by class: 
         original_class_spells = self.__dict__.pop("spells")
-        self.__dict__["spells"] = {}
-        self.__dict__["spells"][original_class] = original_class_spells
-        self.__dict__["spells"][new_class] = {}
+        self.spells = {}
+        self.spells[original_class] = original_class_spells
+        self.spells[new_class] =    {"cantrips": {"known": 4,
+                                                            "cantrip list": []},
+                                                "spells": {"known": 2,
+                                                            "spell list": [],
+                                                            "spell slots": {
+                                                                "1st-level": 2
+                                                            }}
+                                    }
+        
         # separate levels and have a combined key:
         original_class_level = self.__dict__.pop("level")
         new_class_level = 1
-        self.__dict__["level"] = {original_class: original_class_level,
+        self.level = {original_class: original_class_level,
                                 new_class: new_class_level}
         # calc prof bonus: 
-        # self.__dict__.proficiency_bonus = self.level[original_class] + self.level[new_class]
+        # self.proficiency_bonus = self.level[original_class] + self.level[new_class]
         level_bonus_table = {1 + 4*i: 2 + i for i in range(100)}
         for key, value in level_bonus_table.items():
             if original_class_level + new_class_level >= int(key):
-                self.__dict__["proficiency_bonus"] = value
+                self.proficiency_bonus = value
 
         # separate proficiencies by class: 
         # new class proficiencies (armor, weapons, tools, saving throws, skills)
         warlock_proficiencies = self.__dict__.pop('proficiencies')
-        self.__dict__["proficiencies"] = {}
-        self.__dict__["proficiencies"][original_class] = warlock_proficiencies
-        self.__dict__["proficiencies"][new_class] = {}
+        self.proficiencies = {}
+        self.proficiencies[original_class] = warlock_proficiencies
+        self.proficiencies[new_class] = {}
 
         # figure out HP and hit dice (assume sorcerer)
-        original_HP = self.__dict__["HP"]["max"]
-        new_HP = 6 + self.__dict__["ability_scores"]["constitution"]["modifier"]
+        original_HP = self.HP["max"]
+        new_HP = 6 + self.ability_scores["constitution"]["modifier"]   # Level 1 sorcerer HP
         total_HP = original_HP + new_HP
         self.set_HP(total_HP)
+
+        # add new class to object and format as list
+        self.DnDclass = [original_class, new_class]
+
 
         
 
@@ -172,15 +169,14 @@ soveliss.apply_sage_equipment()
 soveliss.set_charisma_charges()
 
 
-
-# Level up Soveliss to Level 2 --- increase number of known spells, spell slots, gain invocations
-soveliss.level_up_2('eldritch mind', 'fiendish vigor', 'hex')
-
-
-
 # Multiclass Soveliss as SorLock (Sorcerer/Warlock) 
-# soveliss.multiclass('warlock', 'sorcerer')
-
+soveliss.multiclass('warlock', 'sorcerer')
+soveliss.add_spell('magic missile', 'sorcerer')
+soveliss.add_spell('chaos bolt', 'sorcerer')
+soveliss.add_cantrip('fire bolt', 'sorcerer')
+soveliss.add_cantrip('ray of frost', 'sorcerer')
+soveliss.add_cantrip('acid splash', 'sorcerer')
+soveliss.add_cantrip('mage hand', 'sorcerer')
 
 
 ##########################################################################################

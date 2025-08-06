@@ -85,21 +85,26 @@ class Warlock(Character):
             print("  Investigation")
             print("  Nature")
             print("  Religion")
+
     def calculate_HP(self):
         self.HP['max'] = 8 + self.ability_scores['constitution']['modifier']
         self.HP['current'] = self.HP['max']
+
     def add_invocation(self, invocation):
         if isinstance(invocation, dict):
             self.invocations.update(invocation)
         else:
             print("Invocation must be dictionary")
+
     def add_initiative_bonus(self):
         self.initiative_bonus += self.ability_scores['dexterity']['modifier']
+
     def add_saving_throw_proficiencies(self):
         save_proficiencies = self.proficiencies['saving throws']
         for save in self.saving_throws:
             if save in save_proficiencies:
                 self.saving_throws[save] += self.proficiency_bonus
+                
     def choose_starting_spells(self, cantrip1, cantrip2, spell1, spell2):
         for spell in master_spell_list:
             if spell['name'].lower() == cantrip1.lower():
@@ -113,40 +118,7 @@ class Warlock(Character):
         for spell in master_spell_list:
             if spell['name'].lower() == spell2.lower():
                 self.spells['spells']['spell list'].append(spell) 
-    def add_spell(self, spell_name, dnd_class):
-        for spell in master_spell_list:
-            if spell['name'].lower() == spell_name.lower() and dnd_class.lower() in spell['class'].lower():
-                self.spells[dnd_class]['spells']['spell list'].append(spell)
-    def add_cantrip(self, cantrip_name, dnd_class):
-        for spell in master_spell_list:
-            if spell['name'].lower() == cantrip_name.lower() and dnd_class.lower() in spell['class'].lower():
-                self.spells[dnd_class]['cantrips']['cantrip list'].append(spell)
-    def cast_spell(self, spell, spell_level="1st-level"):
-        if self.spells['warlock'].get('slot level') < int(spell_level[0]) and self.spells['sorcerer']["spells"]["spell slots"].get(spell_level, None) == None:
-            print("You do not have high enough Warlock slot level or Sorcerer spell slots to cast this spell")
-        elif self.spells['warlock']['spell slots']['available'] == 0 and self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available'] == 0:
-            print("Cannot cast spell. No spell slots remaining of any class")
-        else:
-            spell_list = []
-            for warlock_spell in self.spells['warlock']['spells']['spell list']:
-                spell_list.append(warlock_spell)
-            for sorcerer_spell in self.spells['sorcerer']['spells']['spell list']:
-                spell_list.append(sorcerer_spell)
-            counter = 0
-            for known_spell in spell_list:
-                if spell.title() == known_spell['name']:
-                    counter += 1
-            if counter == 1:
-                print(f'{spell.title()} successfully cast')
-                if self.spells['warlock']['spell slots']['available'] > 0:
-                    self.spells['warlock']['spell slots']['available'] -= 1
-                else:
-                    self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available'] -= 1
-                print(f"You have {self.spells['warlock']['spell slots']['available']} Warlock spell slots remaining and {self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available']} Sorcerer {spell_level} spell slots remaining")
-            else:
-                print("Spell not found. Known spells: ")
-                for spell in spell_list:
-                    print(f'   {spell['name']}')
+    
     def add_warlock_invocations(self, *invocations):
         for invocation in invocations:
             for list_item in invocations_list:

@@ -1,6 +1,5 @@
 {
     "name": "Soveliss Nailo",
-    "level": 2,
     "age": 25,
     "gender": "male",
     "alignment": "lawful good",
@@ -14,11 +13,14 @@
     ],
     "race": "elf",
     "subrace": "drow",
-    "DnDclass": "warlock",
+    "DnDclass": [
+        "warlock",
+        "sorcerer"
+    ],
     "background": "sage",
     "HP": {
-        "current": 17,
-        "max": 17,
+        "current": 18,
+        "max": 18,
         "temp": 0
     },
     "armor_class": 12,
@@ -78,27 +80,6 @@
         "stealth": 1,
         "survival": 1
     },
-    "proficiencies": {
-        "armor": "light armor",
-        "weapons": [
-            "simple weapons",
-            "rapiers",
-            "shortswords",
-            "hand crossbows"
-        ],
-        "tools": null,
-        "saving throws": [
-            "wisdom",
-            "charisma"
-        ],
-        "skills": [
-            "intimidation",
-            "investigation",
-            "perception",
-            "arcana",
-            "history"
-        ]
-    },
     "equipment": {
         "weapons": {
             "light crossbow": {
@@ -151,112 +132,6 @@
     },
     "wealth": {
         "gold": 10
-    },
-    "spells": {
-        "cantrips": {
-            "known": 2,
-            "cantrip list": [
-                {
-                    "name": "Eldritch Blast",
-                    "desc": "<p>A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.</p><p>The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</p>",
-                    "page": "phb 237",
-                    "range": "120 feet",
-                    "components": "V, S",
-                    "ritual": "no",
-                    "duration": "Instantaneous",
-                    "concentration": "no",
-                    "casting_time": "1 action",
-                    "level": "Cantrip",
-                    "school": "Evocation",
-                    "class": "Warlock"
-                },
-                {
-                    "name": "Chill Touch",
-                    "desc": "<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can\u2019t regain hit points until the start of your next turn. Until then, the hand clings to the target.</p><p>If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.</p><p>This spell\u2019s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
-                    "page": "phb 221",
-                    "range": "120 feet",
-                    "components": "V, S",
-                    "ritual": "no",
-                    "duration": "1 round",
-                    "concentration": "no",
-                    "casting_time": "1 action",
-                    "level": "Cantrip",
-                    "school": "Necromancy",
-                    "class": "Sorcerer, Warlock, Wizard"
-                },
-                {
-                    "name": "Dancing Lights",
-                    "desc": "<p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p><p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell\u2019s range.</p>",
-                    "page": "phb 230",
-                    "range": "120 feet",
-                    "components": "V, S, M",
-                    "material": "A bit of phosphorus or wychwood, or a glowworm.",
-                    "ritual": "no",
-                    "duration": "Up to 1 minute",
-                    "concentration": "yes",
-                    "casting_time": "1 action",
-                    "level": "Cantrip",
-                    "school": "Evocation",
-                    "class": "Bard, Sorcerer, Wizard"
-                }
-            ]
-        },
-        "spells": {
-            "known": 3,
-            "spell list": [
-                {
-                    "name": "Expeditious Retreat",
-                    "desc": "<p>This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.<p>",
-                    "page": "phb 238",
-                    "range": "Self",
-                    "components": "V, S",
-                    "ritual": "no",
-                    "duration": "Up to 10 minutes",
-                    "concentration": "yes",
-                    "casting_time": "1 bonus action",
-                    "level": "1st-level",
-                    "school": "Transmutation",
-                    "class": "Sorcerer, Warlock, Wizard"
-                },
-                {
-                    "name": "Ice Knife",
-                    "desc": "<p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.</p>",
-                    "higher_level": "<p>When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.</p>",
-                    "page": "ee pc 19",
-                    "range": "60 feet",
-                    "components": "S, M",
-                    "material": "A drop of water or piece of ice.",
-                    "ritual": "no",
-                    "duration": "Instantaneous",
-                    "concentration": "no",
-                    "casting_time": "1 action",
-                    "level": "1st-level",
-                    "school": "Conjuration",
-                    "class": "Druid, Sorcerer, Wizard"
-                },
-                {
-                    "name": "Hex",
-                    "desc": "<p>You place a curse on a creature that you can see within range. Until the spell ends, you deals an extra 1d6 necrotic damage to the target whenever you hit it with an attack. Also choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability.</p><p>If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.</p><p>A remove curse cast on the target ends this spell early.</p>",
-                    "higher_level": "<p>When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours.</p>",
-                    "page": "phb 251",
-                    "range": "90 feet",
-                    "components": "V, S, M",
-                    "material": "The petrified eye of a newt.",
-                    "ritual": "no",
-                    "duration": "Up to 1 hour",
-                    "concentration": "yes",
-                    "casting_time": "1 bonus action",
-                    "level": "1st-level",
-                    "school": "Enchantment",
-                    "class": "Warlock"
-                }
-            ]
-        },
-        "spell slots": {
-            "available": 2,
-            "maximum": 2
-        },
-        "slot level": 1
     },
     "vulnerabilities": [],
     "immunities": [
@@ -361,21 +236,7 @@
         }
     },
     "patron": "The Reaper",
-    "invocations": {
-        "known": 2,
-        "invocations list": [
-            {
-                "name": "Eldritch Mind",
-                "prerequisite": null,
-                "desc": "<p>You have advantage on Constitution saving throws that you make to maintain your concentration on a spell.</p>"
-            },
-            {
-                "name": "Fiendish Vigor",
-                "prerequisite": null,
-                "desc": "<p>You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</p>"
-            }
-        ]
-    },
+    "invocations": {},
     "specialty": "Discredited Academic",
     "ideal": "The path to power and self-improvement is through knowledge.",
     "flaw": "I am easily distracted by the promise of information.",
@@ -388,5 +249,227 @@
     },
     "spell_save_DC": 13,
     "spell_attack_modifier": 5,
-    "darkvision": 120
+    "darkvision": 120,
+    "spells": {
+        "warlock": {
+            "cantrips": {
+                "known": 2,
+                "cantrip list": [
+                    {
+                        "name": "Eldritch Blast",
+                        "desc": "<p>A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.</p><p>The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</p>",
+                        "page": "phb 237",
+                        "range": "120 feet",
+                        "components": "V, S",
+                        "ritual": "no",
+                        "duration": "Instantaneous",
+                        "concentration": "no",
+                        "casting_time": "1 action",
+                        "level": "Cantrip",
+                        "school": "Evocation",
+                        "class": "Warlock"
+                    },
+                    {
+                        "name": "Chill Touch",
+                        "desc": "<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can\u2019t regain hit points until the start of your next turn. Until then, the hand clings to the target.</p><p>If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.</p><p>This spell\u2019s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+                        "page": "phb 221",
+                        "range": "120 feet",
+                        "components": "V, S",
+                        "ritual": "no",
+                        "duration": "1 round",
+                        "concentration": "no",
+                        "casting_time": "1 action",
+                        "level": "Cantrip",
+                        "school": "Necromancy",
+                        "class": "Sorcerer, Warlock, Wizard"
+                    },
+                    {
+                        "name": "Dancing Lights",
+                        "desc": "<p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p><p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell\u2019s range.</p>",
+                        "page": "phb 230",
+                        "range": "120 feet",
+                        "components": "V, S, M",
+                        "material": "A bit of phosphorus or wychwood, or a glowworm.",
+                        "ritual": "no",
+                        "duration": "Up to 1 minute",
+                        "concentration": "yes",
+                        "casting_time": "1 action",
+                        "level": "Cantrip",
+                        "school": "Evocation",
+                        "class": "Bard, Sorcerer, Wizard"
+                    }
+                ]
+            },
+            "spells": {
+                "known": 2,
+                "spell list": [
+                    {
+                        "name": "Expeditious Retreat",
+                        "desc": "<p>This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.<p>",
+                        "page": "phb 238",
+                        "range": "Self",
+                        "components": "V, S",
+                        "ritual": "no",
+                        "duration": "Up to 10 minutes",
+                        "concentration": "yes",
+                        "casting_time": "1 bonus action",
+                        "level": "1st-level",
+                        "school": "Transmutation",
+                        "class": "Sorcerer, Warlock, Wizard"
+                    },
+                    {
+                        "name": "Ice Knife",
+                        "desc": "<p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.</p>",
+                        "higher_level": "<p>When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.</p>",
+                        "page": "ee pc 19",
+                        "range": "60 feet",
+                        "components": "S, M",
+                        "material": "A drop of water or piece of ice.",
+                        "ritual": "no",
+                        "duration": "Instantaneous",
+                        "concentration": "no",
+                        "casting_time": "1 action",
+                        "level": "1st-level",
+                        "school": "Conjuration",
+                        "class": "Druid, Sorcerer, Wizard"
+                    }
+                ]
+            },
+            "spell slots": {
+                "available": 1,
+                "maximum": 1
+            },
+            "slot level": 1
+        },
+        "sorcerer": {
+            "cantrips": {
+                "known": 4,
+                "cantrip list": [
+                    {
+                        "name": "Fire Bolt",
+                        "desc": "<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn\u2019t being worn or carried.</p><p>This spell\u2019s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>",
+                        "page": "phb 242",
+                        "range": "120 feet",
+                        "components": "V, S",
+                        "ritual": "no",
+                        "duration": "Instantaneous",
+                        "concentration": "no",
+                        "casting_time": "1 action",
+                        "level": "Cantrip",
+                        "school": "Evocation",
+                        "class": "Sorcerer, Wizard"
+                    },
+                    {
+                        "name": "Ray of Frost",
+                        "desc": "<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.</p><p>The spell\u2019s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+                        "page": "phb 271",
+                        "range": "60 feet",
+                        "components": "V, S",
+                        "ritual": "no",
+                        "duration": "Instantaneous",
+                        "concentration": "no",
+                        "casting_time": "1 action",
+                        "level": "Cantrip",
+                        "school": "Evocation",
+                        "class": "Sorcerer, Wizard"
+                    },
+                    {
+                        "name": "Acid Splash",
+                        "desc": "<p>You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a dexterity saving throw or take 1d6 acid damage.</p> <p>This spell\u2019s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
+                        "page": "phb 211",
+                        "range": "60 feet",
+                        "components": "V, S",
+                        "ritual": "no",
+                        "duration": "Instantaneous",
+                        "concentration": "no",
+                        "casting_time": "1 action",
+                        "level": "Cantrip",
+                        "school": "Conjuration",
+                        "class": "Sorcerer, Wizard"
+                    },
+                    {
+                        "name": "Mage Hand",
+                        "desc": "<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can\u2019t attack, activate magic items, or carry more than 10 pounds.</p>",
+                        "page": "phb 256",
+                        "range": "30 feet",
+                        "components": "V, S",
+                        "ritual": "no",
+                        "duration": "1 minute",
+                        "concentration": "no",
+                        "casting_time": "1 action",
+                        "level": "Cantrip",
+                        "school": "Conjuration",
+                        "class": "Bard, Sorcerer, Warlock, Wizard"
+                    }
+                ]
+            },
+            "spells": {
+                "known": 2,
+                "spell list": [
+                    {
+                        "name": "Magic Missile",
+                        "desc": "<p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p>",
+                        "higher_level": "<p>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.</p>",
+                        "page": "phb 257",
+                        "range": "120 feet",
+                        "components": "V, S",
+                        "ritual": "no",
+                        "duration": "Instantaneous",
+                        "concentration": "no",
+                        "casting_time": "1 action",
+                        "level": "1st-level",
+                        "school": "Evocation",
+                        "class": "Sorcerer, Wizard"
+                    },
+                    {
+                        "name": "Chaos Bolt",
+                        "desc": "<p>You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attack's damage type, as shown below.</p>",
+                        "higher_level": "<p>When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra damage of the type rolled for each slot level above 1st.</p>",
+                        "page": "",
+                        "range": "120 feet",
+                        "components": "V, S",
+                        "material": "",
+                        "ritual": "no",
+                        "duration": "Instantaneous",
+                        "concentration": "no",
+                        "casting_time": "1 action",
+                        "level": "1st-level",
+                        "school": "Evocation",
+                        "class": "Sorcerer"
+                    }
+                ],
+                "spell slots": {
+                    "1st-level": 2
+                }
+            }
+        }
+    },
+    "level": {
+        "warlock": 1,
+        "sorcerer": 1
+    },
+    "proficiencies": {
+        "warlock": {
+            "armor": "light armor",
+            "weapons": [
+                "simple weapons",
+                "rapiers",
+                "shortswords",
+                "hand crossbows"
+            ],
+            "tools": null,
+            "saving throws": [
+                "wisdom",
+                "charisma"
+            ],
+            "skills": [
+                "intimidation",
+                "investigation",
+                "perception",
+                "arcana",
+                "history"
+            ]
+        },
+        "sorcerer": {}
+    }
 }

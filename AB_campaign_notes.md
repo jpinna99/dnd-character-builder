@@ -1,5 +1,5 @@
-Start at Level 1
-After first session, we will be at Level 2
+# 8/1/2025 Notes
+Start at Level 1. After first session, we will be at Level 2
 
 Our characters already did a mission together, but it did not go well
 Guildmaster Varis Flintmantle believes that there is a dragon cult out there trying to raise Tiamat
@@ -17,3 +17,5 @@ That evening, before Soveliss retired to his quarters to rest...
 The room was full of people enjoying food and drink some light music was playing. Vorath made his way over to the Drow. He toasted him and said, "You know, death and fear, they are intertwined. And beating death isn't all it is cracked up to be. Not wanting to die is beyond logical." Vorath looked at his daughter Ash... "But sometimes, a way to live forever isn't just you. It could many things. I know you have questions and before people notice us talking... I'll give you an opportunity to ask one." Soveliss looks down at the ground, lost in thought for just a moment, then looks up at Vorath and says, “I came to the surface fleeing my past and seeking knowledge to better my existence, but not knowing how or where to start. If you were me, where would you start?” Vorath says, "Ah! That is a great question, and yet a difficult one. The world, as I learned as well is big and vast and full of amazing different people. I was born to drive the world of all evil but I learned that not everyone is evil. Find those who bring the best out of you. Those who challenge your views, but respect you and your values. Lastly, drink the beer. Order the special at any local tavern." Vorath makes a motion to leave, but Soveliss asks one more question, "What do you think would have become of you if you had remained dead the day you defeated death?" Vorath takes a moment of pause and says, "What would've I become? Who knows, I assume... buried somewhere near Waterdeep. But also, a side of me believes... the other side of me... may have found a way for rebirth. I was spared because of Bahamut; I had a mission. I wish I had a better answer but it is difficult... all I could recall was being greeted by a smooth voice, who I knew deeply as the goddess Bahamut. She gave me one of my best friends — Strider — to keep me on the path. Soveliss, if you spend all this time worrying about death, you will miss the joys of this world. Don't squander this gift of life you've been given." Vorath looks at Soveliss with kind, avuncular eyes, then says, "This adventure before you, it will challenge you... but I know from experience. Be Brave. Be Bold." He then rejoins the rest of the party, leaving Soveliss to ponder his words.
 
 Recap of items gained - 7 potions of minor healing (Titus used one so we have six remaining), a magical item for each member of group (to be selected)
+
+

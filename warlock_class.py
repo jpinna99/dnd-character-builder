@@ -1,5 +1,6 @@
 from character_class import Character
 import json
+import pprint
 
 
 with open('formatted-master-spell-list.json', 'r', encoding='utf-8') as master_spell_list:
@@ -120,19 +121,28 @@ class Warlock(Character):
         for spell in master_spell_list:
             if spell['name'].lower() == cantrip_name.lower() and dnd_class.lower() in spell['class'].lower():
                 self.spells[dnd_class]['cantrips']['cantrip list'].append(spell)
-    def cast_spell(self, spell):
-        if self.spells['spell slots']['available'] == 0:
-            print("Cannot cast spell. No spell slots remaining")
+    def cast_spell(self, spell, spell_level="1st-level"):
+        if self.spells['warlock'].get('slot level') < int(spell_level[0]) and self.spells['sorcerer']["spells"]["spell slots"].get(spell_level, None) == None:
+            print("You do not have high enough Warlock slot level or Sorcerer spell slots to cast this spell")
+        elif self.spells['warlock']['spell slots']['available'] == 0 and self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available'] == 0:
+            print("Cannot cast spell. No spell slots remaining of any class")
         else:
-            spell_list = self.spells['spells']['spell list']
+            spell_list = []
+            for warlock_spell in self.spells['warlock']['spells']['spell list']:
+                spell_list.append(warlock_spell)
+            for sorcerer_spell in self.spells['sorcerer']['spells']['spell list']:
+                spell_list.append(sorcerer_spell)
             counter = 0
             for known_spell in spell_list:
                 if spell.title() == known_spell['name']:
                     counter += 1
             if counter == 1:
                 print(f'{spell.title()} successfully cast')
-                self.spells['spell slots']['available'] -= 1
-                print(f"You have {self.spells['spell slots']['available']} spell slots remaining")
+                if self.spells['warlock']['spell slots']['available'] > 0:
+                    self.spells['warlock']['spell slots']['available'] -= 1
+                else:
+                    self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available'] -= 1
+                print(f"You have {self.spells['warlock']['spell slots']['available']} Warlock spell slots remaining and {self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available']} Sorcerer {spell_level} spell slots remaining")
             else:
                 print("Spell not found. Known spells: ")
                 for spell in spell_list:

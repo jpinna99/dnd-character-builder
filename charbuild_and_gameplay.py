@@ -59,15 +59,17 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
     
     def take_short_rest(self):
         self.spells["warlock"]['spell slots']['available'] = self.spells["warlock"]['spell slots']['maximum']
-        print(f'Short rest successful. You now have {self.spells["warlock"]['spell slots']['available']} available spell slot(s)')
+        self.spells["sorcerer"]['spells']['spell slots']['1st-level']['available'] = self.spells["sorcerer"]['spells']['spell slots']['1st-level']['maximum']
+        print(f'Short rest successful. You now have {self.spells["warlock"]['spell slots']['available']} available Warlock spell slot(s) and {self.spells["sorcerer"]['spells']['spell slots']} Sorcerer spell slots')
 
     def take_long_rest(self):
         self.spells["warlock"]['spell slots']['available'] = self.spells["warlock"]['spell slots']['maximum']
+        self.spells["sorcerer"]['spells']['spell slots']['1st-level']['available'] = self.spells["sorcerer"]['spells']['spell slots']['1st-level']['maximum']
         self.HP['current'] = self.HP['max']
         self.HP['temp'] = 0
         self.shadow_armor["number of uses remaining"] = self.ability_scores['charisma']['modifier']
         self.reapers_blade["number of uses remaining"] = self.ability_scores['charisma']['modifier']
-        print(f'Long rest successful. You now have {self.spells['spell slots']['available']} available spell slot(s) and {self.HP['current']} HP')
+        print(f'Long rest successful. You now have {self.spells["warlock"]['spell slots']['available']} available Warlock spell slot(s) and {self.spells["sorcerer"]['spells']['spell slots']} Sorcerer spell slots and {self.HP['current']} HP')
 
     def use_crossbow(self):
         if self.equipment["weapons"]['crossbow bolts'] == 0: 
@@ -77,6 +79,43 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
         else:
             print("Crossbow fired")
             self.equipment["weapons"]['crossbow bolts']["quantity"] -= 1
+
+    def add_spell(self, spell_name, dnd_class):
+        for spell in master_spell_list:
+            if spell['name'].lower() == spell_name.lower() and dnd_class.lower() in spell['class'].lower():
+                self.spells[dnd_class]['spells']['spell list'].append(spell)
+
+    def add_cantrip(self, cantrip_name, dnd_class):
+        for spell in master_spell_list:
+            if spell['name'].lower() == cantrip_name.lower() and dnd_class.lower() in spell['class'].lower():
+                self.spells[dnd_class]['cantrips']['cantrip list'].append(spell)
+
+    def cast_spell(self, spell, spell_level="1st-level"):
+        if self.spells['warlock'].get('slot level') < int(spell_level[0]) and self.spells['sorcerer']["spells"]["spell slots"].get(spell_level, None) == None:
+            print("You do not have high enough Warlock slot level or Sorcerer spell slots to cast this spell")
+        elif self.spells['warlock']['spell slots']['available'] == 0 and self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available'] == 0:
+            print("Cannot cast spell. No spell slots remaining of any class")
+        else:
+            spell_list = []
+            for warlock_spell in self.spells['warlock']['spells']['spell list']:
+                spell_list.append(warlock_spell)
+            for sorcerer_spell in self.spells['sorcerer']['spells']['spell list']:
+                spell_list.append(sorcerer_spell)
+            counter = 0
+            for known_spell in spell_list:
+                if spell.title() == known_spell['name']:
+                    counter += 1
+            if counter == 1:
+                print(f'{spell.title()} successfully cast')
+                if self.spells['warlock']['spell slots']['available'] > 0:
+                    self.spells['warlock']['spell slots']['available'] -= 1
+                else:
+                    self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available'] -= 1
+                print(f"You have {self.spells['warlock']['spell slots']['available']} Warlock spell slots remaining and {self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available']} Sorcerer {spell_level} spell slots remaining")
+            else:
+                print("Spell not found. Known spells: ")
+                for spell in spell_list:
+                    print(f'   {spell['name']}')
 
     # method below is specific to sorcerer as new_class
     def multiclass(self, original_class, new_class):
@@ -136,7 +175,7 @@ soveliss.add_initiative_bonus()
 soveliss.calculate_saving_throws()
 soveliss.calculate_skills()
 soveliss.choose_starting_equipment()
-soveliss.equip_armor('leather')
+soveliss.don_armor('leather')
 soveliss.equip_weapon('dagger')
 soveliss.calculate_armor_class()
 
@@ -190,6 +229,7 @@ soveliss.add_cantrip('mage hand', 'sorcerer')
   # soveliss.take_damage(1)   # damage from gust of wind in the cavern
   # soveliss.use_reapers_blade()   # against the kobolds
   # soveliss.take_long_rest()   # after we got back to Oakdale
+
 
 
 

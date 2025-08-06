@@ -790,6 +790,22 @@
     "class":"Sorcerer, Wizard"
   },
   {
+    "name":"Chaos Bolt",
+    "desc":"<p>You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attack's damage type, as shown below.</p>",
+    "higher_level":"<p>When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra damage of the type rolled for each slot level above 1st.</p>",
+    "page":"",
+    "range":"120 feet",
+    "components":"V, S",
+    "material":"",
+    "ritual":"no",
+    "duration":"Instantaneous",
+    "concentration":"no",
+    "casting_time":"1 action",
+    "level":"1st-level",
+    "school":"Evocation",
+    "class":"Sorcerer"    
+  },
+  {
     "name":"Charm Person",
     "desc":"<p>You attempt to charm a humanoid you can see within range. It must make a wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</p>",
     "higher_level":"<p>When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>",

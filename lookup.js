@@ -196,8 +196,18 @@ fetch('soveliss-stats.json')
             const infoContainer = document.getElementById('info-container');
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
-            const parsedData = JSON.parse(JSON.stringify(data.spells.cantrips["cantrip list"]));
-            for (let cantrip of parsedData) {
+            const parsedDataWarlock = JSON.parse(JSON.stringify(data.spells["warlock"]["cantrips"]["cantrip list"]));
+            for (let cantrip of parsedDataWarlock) {
+                let cantripdata = document.createElement('p');
+                cantripdata.innerHTML = JSON.stringify(cantrip, null, 2);
+                newInfo.appendChild(cantripdata);
+                let spacer = document.createElement('p');
+                spacer.style.marginBottom = '2px';
+                spacer.innerHTML = "------";
+                newInfo.appendChild(spacer);
+            }
+            const parsedDataSorcerer = JSON.parse(JSON.stringify(data.spells["sorcerer"]["cantrips"]["cantrip list"]));
+            for (let cantrip of parsedDataSorcerer) {
                 let cantripdata = document.createElement('p');
                 cantripdata.innerHTML = JSON.stringify(cantrip, null, 2);
                 newInfo.appendChild(cantripdata);
@@ -214,8 +224,18 @@ fetch('soveliss-stats.json')
             const infoContainer = document.getElementById('info-container');
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
-            const parsedData = JSON.parse(JSON.stringify(data.spells.spells["spell list"]));
-            for (let spell of parsedData) {
+            const parsedDataWarlock = JSON.parse(JSON.stringify(data.spells["warlock"]["spells"]["spell list"]));
+            for (let spell of parsedDataWarlock) {
+                let spelldata = document.createElement('p');
+                spelldata.innerHTML = JSON.stringify(spell, null, 2);
+                newInfo.appendChild(spelldata);
+                let spacer = document.createElement('p');
+                spacer.style.marginBottom = '2px';
+                spacer.innerHTML = "------";
+                newInfo.appendChild(spacer);
+            }
+            const parsedDatSorcerer = JSON.parse(JSON.stringify(data.spells["sorcerer"]["spells"]["spell list"]));
+            for (let spell of parsedDatSorcerer) {
                 let spelldata = document.createElement('p');
                 spelldata.innerHTML = JSON.stringify(spell, null, 2);
                 newInfo.appendChild(spelldata);
@@ -232,8 +252,8 @@ fetch('soveliss-stats.json')
             const infoContainer = document.getElementById('info-container');
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
-            const parsedCantripData = JSON.parse(JSON.stringify(data.spells.cantrips["cantrip list"]));
-            for (let cantrip of parsedCantripData) {
+            const parsedCantripDataWarlock = JSON.parse(JSON.stringify(data.spells['warlock']["cantrips"]["cantrip list"]));
+            for (let cantrip of parsedCantripDataWarlock) {
                 if (cantrip.concentration === true || cantrip.concentration == 'yes') {
                     let cantripdata = document.createElement('p');
                     cantripdata.innerHTML = JSON.stringify(cantrip, null, 2);
@@ -244,8 +264,32 @@ fetch('soveliss-stats.json')
                     newInfo.appendChild(spacer);
                 }
             }
-            const parsedSpellData = JSON.parse(JSON.stringify(data.spells.spells["spell list"]));
-            for (let spell of parsedSpellData) {
+            const parsedSpellDataWarlock = JSON.parse(JSON.stringify(data.spells['warlock']["spells"]["spell list"]));
+            for (let spell of parsedSpellDataWarlock) {
+                if (spell.concentration === true || spell.concentration == 'yes') {
+                    let spelldata = document.createElement('p');
+                    spelldata.innerHTML = JSON.stringify(spell, null, 2);
+                    newInfo.appendChild(spelldata);
+                    let spacer = document.createElement('p');
+                    spacer.style.marginBottom = '2px';
+                    spacer.innerHTML = "------";
+                    newInfo.appendChild(spacer);
+                }
+            }
+            const parsedCantripDataSorcerer = JSON.parse(JSON.stringify(data.spells['sorcerer']["cantrips"]["cantrip list"]));
+            for (let cantrip of parsedCantripDataSorcerer) {
+                if (cantrip.concentration === true || cantrip.concentration == 'yes') {
+                    let cantripdata = document.createElement('p');
+                    cantripdata.innerHTML = JSON.stringify(cantrip, null, 2);
+                    newInfo.appendChild(cantripdata);
+                    let spacer = document.createElement('p');
+                    spacer.style.marginBottom = '2px';
+                    spacer.innerHTML = "------";
+                    newInfo.appendChild(spacer);
+                }
+            }
+            const parsedSpellDataSorcerer = JSON.parse(JSON.stringify(data.spells['sorcerer']["spells"]["spell list"]));
+            for (let spell of parsedSpellDataSorcerer) {
                 if (spell.concentration === true || spell.concentration == 'yes') {
                     let spelldata = document.createElement('p');
                     spelldata.innerHTML = JSON.stringify(spell, null, 2);
@@ -264,9 +308,12 @@ fetch('soveliss-stats.json')
             const infoContainer = document.getElementById('info-container');
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
-            const SovSpellSlots = document.createElement('p');
-            SovSpellSlots.innerHTML = JSON.stringify(data.spells['spell slots'], null, 2);
-            newInfo.appendChild(SovSpellSlots);
+            const SovWarlockSpellSlots = document.createElement('p');
+            SovWarlockSpellSlots.innerHTML = "Warlock: " + JSON.stringify(data.spells['warlock']['spell slots'], null, 2);
+            const SovSorcererSpellSlots = document.createElement('p');
+            SovSorcererSpellSlots.innerHTML = "Sorcerer: " + JSON.stringify(data.spells['sorcerer']['spells']['spell slots'], null, 2);
+            newInfo.appendChild(SovWarlockSpellSlots);
+            newInfo.appendChild(SovSorcererSpellSlots);
             infoContainer.appendChild(newInfo);
         })
 
@@ -412,17 +459,25 @@ fetch('soveliss-stats.json')
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
             const SovActions = document.createElement('div');
-            const cantripList = data.spells.cantrips['cantrip list'];
-            const spellList = data.spells.spells['spell list'];
+            const cantripListWarlock = data.spells.warlock.cantrips['cantrip list'];
+            const cantripListSorcerer = data.spells.sorcerer.cantrips['cantrip list'];
+            const spellListWarlock = data.spells.warlock.spells['spell list'];
+            const spellListSorcerer = data.spells.sorcerer.spells['spell list'];
             const attackActions = document.createElement('p');
             attackActions.innerHTML = "Attack:  weapons " + JSON.stringify(data.equipment.active.weapons, null, 2); 
             SovActions.appendChild(attackActions);
-            const cantripActions = document.createElement('p');
-            cantripActions.innerHTML = "Cantrips: " + JSON.stringify(cantripList.map((cantrip) => cantrip.casting_time === '1 action' ? cantrip.name: ""));
-            SovActions.appendChild(cantripActions);
-            const spellActions = document.createElement('p');
-            spellActions.innerHTML = "Spells: " + JSON.stringify(spellList.map((spell) => spell.casting_time === '1 action' ? spell.name: ""));
-            SovActions.appendChild(spellActions);
+            const cantripActionsWarlock = document.createElement('p');
+            const cantripActionsSorcerer = document.createElement('p');
+            cantripActionsWarlock.innerHTML = "Warlock cantrips: " + JSON.stringify(cantripListWarlock.map((cantrip) => cantrip.casting_time === '1 action' ? cantrip.name: ""));
+            cantripActionsSorcerer.innerHTML = "Sorcerer cantrips: " + JSON.stringify(cantripListSorcerer.map((cantrip) => cantrip.casting_time === '1 action' ? cantrip.name: ""));
+            SovActions.appendChild(cantripActionsWarlock);
+            SovActions.appendChild(cantripActionsSorcerer);
+            const spellActionsWarlock = document.createElement('p');
+            const spellActionsSorcerer = document.createElement('p');
+            spellActionsWarlock.innerHTML = "Warlock spells: " + JSON.stringify(spellListWarlock.map((spell) => spell.casting_time === '1 action' ? spell.name: ""));
+            spellActionsSorcerer.innerHTML = "Sorcerer spells: " + JSON.stringify(spellListSorcerer.map((spell) => spell.casting_time === '1 action' ? spell.name: ""));
+            SovActions.appendChild(spellActionsWarlock);
+            SovActions.appendChild(spellActionsSorcerer);
             const reapersBlade = document.createElement('p');
             reapersBlade.innerHTML = "Reaper's Blade: summon blade to your side";
             SovActions.appendChild(reapersBlade);
@@ -442,15 +497,42 @@ fetch('soveliss-stats.json')
             const SovReapersBlade = document.createElement('p');
             SovReapersBlade.innerHTML = `Reaper's Blade: You may use a bonus action to move the blade up to 20ft away, up to maximum of 50ft from you. As part of that same bonus action, you may have the Blade attack a target within 10ft of it. Make a melee spell attack against the target and on a hit, deal 1d8 Necrotic damage (increases at levels 6 and 14).`;
             SovBonusActions.appendChild(SovReapersBlade);
-            const SovBonusActionSpells = document.createElement('div');
-            for (let spell of data.spells.spells['spell list']) {
+            const SovBonusActionCantripsWarlock = document.createElement('div');
+            for (let spell of data.spells.warlock.cantrips['cantrip list']) {
                 if (spell['casting_time'] === "1 bonus action") {
                     let newspell = document.createElement('p')
-                    newspell.innerHTML = `${JSON.stringify(spell["name"])}: ${JSON.stringify(spell["desc"])}`;
-                    SovBonusActionSpells.appendChild(newspell);
+                    newspell.innerHTML = `Warlock cantrip: ${JSON.stringify(spell["name"])}: ${JSON.stringify(spell["desc"])}`;
+                    SovBonusActionCantripsWarlock.appendChild(newspell);
                 }
             }
-            SovBonusActions.appendChild(SovBonusActionSpells);
+            const SovBonusActionCantripsSorcerer = document.createElement('div');
+            for (let spell of data.spells.sorcerer.cantrips['cantrip list']) {
+                if (spell['casting_time'] === "1 bonus action") {
+                    let newspell = document.createElement('p')
+                    newspell.innerHTML = `Sorcerer cantrip: ${JSON.stringify(spell["name"])}: ${JSON.stringify(spell["desc"])}`;
+                    SovBonusActionCantripsSorcerer.appendChild(newspell);
+                }
+            }
+            const SovBonusActionSpellsWarlock = document.createElement('div');
+            for (let spell of data.spells.warlock.spells['spell list']) {
+                if (spell['casting_time'] === "1 bonus action") {
+                    let newspell = document.createElement('p')
+                    newspell.innerHTML = `Warlock spell: ${JSON.stringify(spell["name"])}: ${JSON.stringify(spell["desc"])}`;
+                    SovBonusActionSpellsWarlock.appendChild(newspell);
+                }
+            }
+            const SovBonusActionSpellsSorcerer = document.createElement('div');
+            for (let spell of data.spells.sorcerer.spells['spell list']) {
+                if (spell['casting_time'] === "1 bonus action") {
+                    let newspell = document.createElement('p')
+                    newspell.innerHTML = `Sorcerer spell: ${JSON.stringify(spell["name"])}: ${JSON.stringify(spell["desc"])}`;
+                    SovBonusActionSpellsWarlock.appendChild(newspell);
+                }
+            }
+            SovBonusActions.appendChild(SovBonusActionCantripsWarlock);
+            SovBonusActions.appendChild(SovBonusActionCantripsSorcerer);
+            SovBonusActions.appendChild(SovBonusActionSpellsWarlock);
+            SovBonusActions.appendChild(SovBonusActionSpellsSorcerer);
             newInfo.appendChild(SovBonusActions);
             infoContainer.appendChild(newInfo);
         })
@@ -468,7 +550,6 @@ fetch('soveliss-stats.json')
             infoContainer.appendChild(newInfo);
         }
         )
-        
     })
     
 

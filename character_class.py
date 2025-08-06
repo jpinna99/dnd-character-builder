@@ -459,11 +459,16 @@ class Character:
         self.HP['current'] += HP
         if self.HP['current'] > self.HP['max']:
             self.HP['current'] = self.HP['max']
-    def equip_armor(self, armor):
+    def don_armor(self, armor):
         if armor != self.equipment['armor']:
             print('You do not have this type of armor')
         else:
             self.equipment['active']['armor'] = armor
+    def doff_armor(self):
+        if self.equipment['active'].get('armor', None) == None:
+            print("You are not wearing armor")
+        else:
+            self.equipment['active']['armor'] = None
     def equip_weapon(self, weapon):
         if weapon not in self.equipment['weapons'].keys():
             print('You do not have this weapon')

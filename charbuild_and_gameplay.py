@@ -58,11 +58,11 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
         self.equipment['armor'] = 'leather'
     
     def take_short_rest(self):
-        self.spells['spell slots']['available'] = self.spells['spell slots']['maximum']
-        print(f'Short rest successful. You now have {self.spells['spell slots']['available']} available spell slot(s)')
+        self.spells["warlock"]['spell slots']['available'] = self.spells["warlock"]['spell slots']['maximum']
+        print(f'Short rest successful. You now have {self.spells["warlock"]['spell slots']['available']} available spell slot(s)')
 
     def take_long_rest(self):
-        self.spells['spell slots']['available'] = self.spells['spell slots']['maximum']
+        self.spells["warlock"]['spell slots']['available'] = self.spells["warlock"]['spell slots']['maximum']
         self.HP['current'] = self.HP['max']
         self.HP['temp'] = 0
         self.shadow_armor["number of uses remaining"] = self.ability_scores['charisma']['modifier']
@@ -89,7 +89,8 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
                                                 "spells": {"known": 2,
                                                             "spell list": [],
                                                             "spell slots": {
-                                                                "1st-level": 2
+                                                                "1st-level": {'available': 2,
+                                                                              'maximum': 2}
                                                             }}
                                     }
         
@@ -189,9 +190,6 @@ soveliss.add_cantrip('mage hand', 'sorcerer')
   # soveliss.take_damage(1)   # damage from gust of wind in the cavern
   # soveliss.use_reapers_blade()   # against the kobolds
   # soveliss.take_long_rest()   # after we got back to Oakdale
-
-
-
 
 
 

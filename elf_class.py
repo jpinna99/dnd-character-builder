@@ -11,7 +11,7 @@ class Elf(Character):
             'keen senses': 'proficiency in perception',
             'fey ancestry': ['advantage on saving throws against being charmed', 'magic cannot put you to sleep'],
             'trance': 'deeply meditate in semiconscious state for 4 hours per day',
-            'languages': ['common', 'elvish']
+            'languages': ['common', 'elven']
         }
         self.saving_throw_advantages = ['charmed']
         self.immunities = ['sleep']

@@ -112,10 +112,14 @@ class Warlock(Character):
         for spell in master_spell_list:
             if spell['name'].lower() == spell2.lower():
                 self.spells['spells']['spell list'].append(spell) 
-    def add_spell(self, spell_name):
+    def add_spell(self, spell_name, dnd_class):
         for spell in master_spell_list:
-            if spell['name'].lower() == spell_name.lower() and 'warlock' in spell['class'].lower():
-                self.spells['spells']['spell list'].append(spell)
+            if spell['name'].lower() == spell_name.lower() and dnd_class.lower() in spell['class'].lower():
+                self.spells[dnd_class]['spells']['spell list'].append(spell)
+    def add_cantrip(self, cantrip_name, dnd_class):
+        for spell in master_spell_list:
+            if spell['name'].lower() == cantrip_name.lower() and dnd_class.lower() in spell['class'].lower():
+                self.spells[dnd_class]['cantrips']['cantrip list'].append(spell)
     def cast_spell(self, spell):
         if self.spells['spell slots']['available'] == 0:
             print("Cannot cast spell. No spell slots remaining")

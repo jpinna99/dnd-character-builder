@@ -424,14 +424,20 @@ fetch('soveliss-stats.json')
             const infoContainer = document.getElementById('info-container');
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
-            const SovWeapons = document.createElement('p');
-            const SovWeaponsAll = document.createElement('p');
-            SovWeaponsAll.innerHTML = "Weapons (all): " + JSON.stringify(data.equipment.weapons, null, 2);
-            SovWeapons.appendChild(SovWeaponsAll);      
+            const weaponsHeader = document.createElement('p');
+            weaponsHeader.innerHTML = 'Weapons (all): ';
+            newInfo.appendChild(weaponsHeader);
+            for (let weapon in data.equipment.weapons) {
+                let item = document.createElement('p');
+                item.innerHTML = `${JSON.stringify(weapon, null, 2)}: ${JSON.stringify(data.equipment.weapons[weapon], null, 2)}`
+                newInfo.appendChild(item);
+            }
+            const spacer = document.createElement('p');
+            spacer.innerHTML = "---------------------"
+            newInfo.appendChild(spacer);
             const SovWeaponsActive = document.createElement('p');
             SovWeaponsActive.innerHTML = "Weapons (active): " + JSON.stringify(data.equipment.active.weapons, null, 2);    
-            SovWeapons.appendChild(SovWeaponsActive); 
-            newInfo.appendChild(SovWeapons);
+            newInfo.appendChild(SovWeaponsActive);
             infoContainer.appendChild(newInfo);
         })
 

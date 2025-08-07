@@ -138,8 +138,6 @@ def isolate_warlock_spells_for_soveliss():
         for spell in spell_list:    
             if spell.get('archetype', None) != None:
                 if "warlock:" in spell["archetype"].lower():
-                    print(spell['archetype'].lower())
-                    print(spell_list.index(spell))
                     spell_list.pop(spell_list.index(spell))
     return spell_list
 

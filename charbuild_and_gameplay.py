@@ -162,7 +162,22 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
         self.DnDclass = [original_class, new_class]
 
 
-        
+
+def isolate_sorcerer_spells_for_soveliss():
+    spell_list = []
+    for spell in master_spell_list:
+        if "sorcerer" in spell["class"].lower():
+            spell_list.append(spell)
+    return spell_list
+
+sorcerer_spell_list = isolate_sorcerer_spells_for_soveliss()
+sorted_sorcerer_spell_list = sorted(sorcerer_spell_list, key=lambda x: x['level'])
+
+with open('sorcerer_spell_list.json', 'w') as isolated_sorcerer_spell_list:
+    json.dump(sorted_sorcerer_spell_list, isolated_sorcerer_spell_list, indent=4)
+
+
+
 
 # class instantiation
 soveliss = Soveliss("Soveliss Nailo")

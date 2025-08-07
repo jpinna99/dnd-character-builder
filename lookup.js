@@ -148,9 +148,11 @@ fetch('soveliss-stats.json')
             const infoContainer = document.getElementById('info-container');
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
-            const SovSkills = document.createElement('p');
-            SovSkills.innerHTML = JSON.stringify(data.skills, null, 2);
-            newInfo.appendChild(SovSkills);
+            for (let skill in data.skills) {
+                let item = document.createElement('p');
+                item.innerHTML = JSON.stringify(`${skill}: ${data.skills[skill]}`, null, 2);
+                newInfo.appendChild(item);
+            }
             infoContainer.appendChild(newInfo);
         })
 

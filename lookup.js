@@ -151,6 +151,7 @@ fetch('soveliss-stats.json')
             for (let skill in data.skills) {
                 let item = document.createElement('p');
                 item.innerHTML = JSON.stringify(`${skill}: ${data.skills[skill]}`, null, 2);
+                item.style.margin = '0px 0px';
                 newInfo.appendChild(item);
             }
             infoContainer.appendChild(newInfo);

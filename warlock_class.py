@@ -124,3 +124,27 @@ class Warlock(Character):
             for list_item in invocations_list:
                 if list_item['name'].lower() == invocation.lower():
                     self.invocations['invocations list'].append(list_item)
+
+
+
+
+
+
+def isolate_warlock_spells_for_soveliss():
+    spell_list = []
+    for spell in master_spell_list:
+        if "warlock" in spell["class"].lower():
+            spell_list.append(spell)
+        for spell in spell_list:    
+            if spell.get('archetype', None) != None:
+                if "warlock:" in spell["archetype"].lower():
+                    print(spell['archetype'].lower())
+                    print(spell_list.index(spell))
+                    spell_list.pop(spell_list.index(spell))
+    return spell_list
+
+warlock_spell_list = isolate_warlock_spells_for_soveliss()
+sorted_warlock_spell_list = sorted(warlock_spell_list, key=lambda x: x['level'])
+
+with open('warlock_spell_list.json', 'w') as isolated_warlock_spell_list:
+    json.dump(sorted_warlock_spell_list, isolated_warlock_spell_list, indent=4)

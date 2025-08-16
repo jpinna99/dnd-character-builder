@@ -522,7 +522,7 @@ class Character:
     def add_to_inventory(self, item_name, item_count):
         if isinstance(item_name, str) and isinstance(item_count, int):
             self.equipment[item_name] = item_count
-            print(f"Item successfully added. You have {item_count} {item_name}(s)")
+            print(f"Item successfully added. You have {item_count} {item_name}")
         else:
             print("Two paramters needed: item_name (string) and item_count (integer)")
 

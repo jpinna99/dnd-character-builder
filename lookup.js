@@ -559,6 +559,18 @@ fetch('soveliss-stats.json')
             infoContainer.appendChild(newInfo);
         }
         )
+
+        const lookUpTidesOfChaos = document.getElementById("look-up-tides-of-chaos");
+        lookUpTidesOfChaos.addEventListener('click', e => {
+            const infoContainer = document.getElementById('info-container');
+            infoContainer.innerHTML = '';
+            const newInfo = document.createElement('div');
+            const tidesOfChaos = document.createElement('p');
+            tidesOfChaos.innerHTML = JSON.stringify(data.tides_of_chaos, null, 2);
+            newInfo.appendChild(tidesOfChaos);
+            infoContainer.appendChild(newInfo);
+        })
+
     })
     
 

@@ -347,10 +347,10 @@ fetch('soveliss-stats.json')
             const infoContainer = document.getElementById('info-container');
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
-            const parsedData = JSON.parse(JSON.stringify(data.invocations["invocations list"]));
+            const parsedData = JSON.parse(JSON.stringify(data.invocations, null, 2));
             for (let invocation of parsedData) {
                 let invocationdata = document.createElement('p');
-                invocationdata.innerHTML = JSON.stringify(invocation);
+                invocationdata.innerHTML = JSON.stringify(invocation, null, 2);
                 newInfo.appendChild(invocationdata);
                 let spacer = document.createElement('p');
                 spacer.style.marginBottom = '2px';

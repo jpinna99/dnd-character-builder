@@ -31,7 +31,7 @@ class Warlock(Character):
                             'maximum': 1},
             'slot level': 1
         }
-        self.invocations = {}
+        self.invocations = []
         self.proficiencies = {
             "armor": "light armor",
             "weapons": [
@@ -93,7 +93,7 @@ class Warlock(Character):
 
     def add_invocation(self, invocation):
         if isinstance(invocation, dict):
-            self.invocations.update(invocation)
+            self.invocations.append(invocation)
         else:
             print("Invocation must be dictionary")
             print("-------------------")

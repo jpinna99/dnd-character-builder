@@ -128,7 +128,10 @@
         "small knife": 1,
         "letter from dead colleague posing question I have been unable to answer": 1,
         "set of common clothes": 1,
-        "pouch containing 10 gp": 1
+        "pouch containing 10 gp": 1,
+        "Potion of Draconic Sight": 1,
+        "Potion of Minor Healing": 2,
+        "Children's learning book (found on path to Greenest)": 1
     },
     "wealth": {
         "gold": 10
@@ -440,7 +443,7 @@
                 ],
                 "spell slots": {
                     "1st-level": {
-                        "available": 2,
+                        "available": 1,
                         "maximum": 2
                     }
                 }

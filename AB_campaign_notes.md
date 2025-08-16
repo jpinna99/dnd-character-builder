@@ -19,3 +19,22 @@ The room was full of people enjoying food and drink some light music was playing
 Recap of items gained - 7 potions of minor healing (Titus used one so we have six remaining), a magical item for each member of group (to be selected)
 
 
+
+# 8/15/2025 Notes
+Traveling to Greenest to meet Governor Nighthill
+We divided up the items accordingly
+Hildy talked to birds and found at that some humanoids were fleeing Greenest
+Soveliss collected a children's book
+We get to Greenest around sunset
+We enter Greenest and it is being attacked by a dragon
+Three guards are interrogating what looks to be a dragon cult member
+
+In battle:
+Soveliss has +2 to AC and Dex saving throws with half cover
+
+We talk to the family we saved
+
+We think we meet Escobar the Red (red-headed dwarf)
+We enter the keep and gain intel (see recap)
+Items: gold, medallion (Hildy)
+

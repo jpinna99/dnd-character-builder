@@ -59,7 +59,6 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
     
     def take_short_rest(self):
         self.spells["warlock"]['spell slots']['available'] = self.spells["warlock"]['spell slots']['maximum']
-        self.spells["sorcerer"]['spells']['spell slots']['1st-level']['available'] = self.spells["sorcerer"]['spells']['spell slots']['1st-level']['maximum']
         print(f'Short rest successful. You now have {self.spells["warlock"]['spell slots']['available']} available Warlock spell slot(s) and {self.spells["sorcerer"]['spells']['spell slots']} Sorcerer spell slots')
 
     def take_long_rest(self):
@@ -111,7 +110,10 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
                     self.spells['warlock']['spell slots']['available'] -= 1
                 else:
                     self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available'] -= 1
-                print(f"You have {self.spells['warlock']['spell slots']['available']} Warlock spell slots remaining and {self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available']} Sorcerer {spell_level} spell slots remaining")
+                print(f"You have {self.spells['warlock']['spell slots']['available']} Warlock spell slot(s) remaining and {self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available']} Sorcerer {spell_level} spell slot(s) remaining")
+                for known_spell in self.__dict__['spells']['sorcerer']['spells']['spell list']:
+                    if known_spell['name'].lower() == spell.lower():
+                        print('This is a sorcerer spell. Make sure you roll on the Wild Magic Surge table!')
             else:
                 print("Spell not found. Known spells: ")
                 for spell in spell_list:
@@ -245,6 +247,15 @@ soveliss.add_cantrip('mage hand', 'sorcerer')
   # soveliss.use_reapers_blade()   # against the kobolds
   # soveliss.take_long_rest()   # after we got back to Oakdale
 
+# 8/15/2025 Session:
+soveliss.add_to_inventory('Potion of Draconic Sight', 1)
+soveliss.add_to_inventory('Potion of Minor Healing', 2)
+soveliss.take_long_rest()
+soveliss.add_to_inventory("Children's learning book (found on path to Greenest)", 1)
+# During battle, Soveliss dove behind some rocks for half cover and gained +2 to AC and Dex saves
+soveliss.cast_spell('ice knife')
+soveliss.cast_spell('chaos bolt')
+soveliss.take_short_rest()
 
 
 

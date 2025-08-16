@@ -85,6 +85,7 @@ class Warlock(Character):
             print("  Investigation")
             print("  Nature")
             print("  Religion")
+            print("-------------------")
 
     def calculate_HP(self):
         self.HP['max'] = 8 + self.ability_scores['constitution']['modifier']
@@ -95,6 +96,7 @@ class Warlock(Character):
             self.invocations.update(invocation)
         else:
             print("Invocation must be dictionary")
+            print("-------------------")
 
     def add_initiative_bonus(self):
         self.initiative_bonus += self.ability_scores['dexterity']['modifier']

@@ -179,21 +179,25 @@ class Character:
             self.name = name
         else: 
             print('Name must be a string')
+            print("-------------------")
     def set_level(self, level):
         if isinstance(level, int):
             self.level = level
         else:
             print("Level must be integer")
+            print("-------------------")
     def set_age(self, age):
         if isinstance(age, int):
             self.age = age
         else:
             print("Age must be integer")
+            print("-------------------")
     def set_gender(self, gender):
         if isinstance(gender, str):
             self.gender = gender
         else:
             print("Gender must be a string (ex: 'male' or 'female')")
+            print("-------------------")
     def set_alignment(self, alignment):
         if isinstance(alignment, str):
             self.alignment = alignment
@@ -209,79 +213,94 @@ class Character:
             print("  Lawful Evil")
             print("  Neutral Evil")
             print("  Chaotic Evil")
+            print("-------------------")
     def set_size(self, size):
         if isinstance(size, str):
             self.size = size
         else:
             print("Size must be string (ex: Small, Medium, Large)")
+            print("-------------------")
     def set_speed(self, speed):
         if isinstance(speed, int):
             self.speed = speed
         else:
             print("Speed must be integer")
+            print("-------------------")
     def set_languages(self, languages):
         all_strings = map(lambda item: isinstance(item, str), languages)
         if all(all_strings):
             self.languages = languages
         else:
             print("Languages must be strings (ex. Common, Elven, Infernal, etc.)")
+            print("-------------------")
     def set_race(self, race):
         if isinstance(race, str):
             self.race = race
         else: 
-            print('Race must be a string') 
+            print('Race must be a string')
+            print("-------------------")
     def set_subrace(self, subrace):
         if isinstance(subrace, str):
             self.subrace = subrace
         else: 
             print('Subrace must be a string')
+            print("-------------------")
     def set_class(self, DndClass):
         if isinstance(DndClass, str):
             self.DnDclass = DndClass
         else: 
             print('Class must be a string')
+            print("-------------------")
     def set_background(self, background):
         if isinstance(background, str):
             self.background = background
         else: 
             print('Background must be a string')
+            print("-------------------")
     def set_HP(self, HP):
         if isinstance(HP, int):
             self.HP['max'] = HP
             self.HP['current'] = self.HP['max']
         else:
             print("HP must be integer")
+            print("-------------------")
     def set_temp_HP(self, temp_HP):
         if isinstance(temp_HP, int):
             self.HP['temp'] = temp_HP
         else:
             print("Temp HP must be integer")
+            print("-------------------")
     def set_armor_class(self, armor_class):
         if isinstance(armor_class, int):
             self.armor_class = armor_class
         else:
             print("Armor class must be integer")
+            print("-------------------")
     def set_proficiency_bonus(self, proficiency_bonus):
         if isinstance(proficiency_bonus, int):
             self.proficiency_bonus = proficiency_bonus
         else:
             print("Proficiency bonus must be integer")
+            print("-------------------")
     def set_initiative_bonus(self, initiative_bonus):
         if isinstance(initiative_bonus, int):
             self.initiative_bonus = initiative_bonus
         else:
             print("Initiative bonus must be integer")
+            print("-------------------")
     def set_ability_scores(self, ability_scores):
         char_abilities = self.ability_scores.keys()
         for ability in ability_scores.keys():
             if ability not in char_abilities:
                 print("Invalid ability found")
+                print("-------------------")
                 return None
             for stat in ability_scores.values():
                 if isinstance(stat['base score'], int) and isinstance(stat['modifier'], int):
                     continue
                 else:
                     print("Base score and modifier must be integers")
+                    print("-------------------")
                     return None
         self.ability_scores = ability_scores
     def set_saving_throws(self, saving_throws):
@@ -289,12 +308,14 @@ class Character:
         for save in saving_throws.keys():
             if save not in char_saves:
                 print("Invalid saving throw found")
+                print("-------------------")
                 return None
             for stat in saving_throws.values():
                 if isinstance(stat, int):
                     continue
                 else:
                     print("Saving throw stats must be integers")
+                    print("-------------------")
                     return None
         self.saving_throws = saving_throws
     def set_skills(self, skills):
@@ -302,12 +323,14 @@ class Character:
         for skill in skills.keys():
             if skill not in char_skills:
                 print("Invalid skill found")
+                print("-------------------")
                 return None
             for stat in skills.values():
                 if isinstance(stat, int):
                     continue
                 else:
                     print("Skill stats must be integers")
+                    print("-------------------")
                     return None
     def set_proficiencies(self, proficiencies):
         self.proficiencies = proficiencies
@@ -326,7 +349,7 @@ class Character:
             self.has_inspiration = has_inspiration
         else:
             print("Inspiration must be either True or False")
-
+            print("-------------------")
 
 # calculations
     def calculate_armor_class(self):
@@ -429,17 +452,21 @@ class Character:
     def gain_inspiration(self, inspiration_die):
         if type(inspiration_die) != str:
             print("Inspiration die must be in following format: '1d4', '1d6', '1d8'")
+            print("-------------------")
         elif len(inspiration_die) != 3 or inspiration_die[1] != 'd':
             print("Inspiration die must be in following format: '1d4', '1d6', '1d8'")
+            print("-------------------")
         else:
             self.has_inspiration = True
             self.inspiration_die = inspiration_die
     def use_inspiration(self):
         if self.has_inspiration == False:
             print("You do not have inspiration")
+            print("-------------------")
         else:
             self.has_inspiration = False
             print(f"Inspiration gains additional {self.inspiration_die}")
+            print("-------------------")
             self.inspiration_die = ""
     def take_damage(self, damage):
         HP_remaining = (self.HP['current'] + self.HP['temp']) - damage
@@ -448,6 +475,7 @@ class Character:
             self.HP['temp'] = 0
             if abs(HP_remaining) >= self.HP['max']:
                 print('You are instantly dead')
+                print("-------------------")
         else:
             if damage <= self.HP['temp']:
                 self.HP['temp'] -= damage
@@ -462,37 +490,45 @@ class Character:
     def don_armor(self, armor):
         if armor != self.equipment['armor']:
             print('You do not have this type of armor')
+            print("-------------------")
         else:
             self.equipment['active']['armor'] = armor
     def doff_armor(self):
         if self.equipment['active'].get('armor', None) == None:
             print("You are not wearing armor")
+            print("-------------------")
         else:
             self.equipment['active']['armor'] = None
     def equip_weapon(self, weapon):
         if weapon not in self.equipment['weapons'].keys():
             print('You do not have this weapon')
+            print("-------------------")
         else:
             self.equipment['active']['weapons'].append(weapon)
     def unequip_weapon(self, weapon):
         if weapon not in self.equipment['active']['weapons']:
             print('Weapon not equipped')
+            print("-------------------")
         else:
             self.equipment['active']['weapons'].remove(weapon)
     def spend_money(self, wealth_type, money):
         if type(money) != int and type(wealth_type) != str:
             print('Input must be integer')
             print('Type must be string (ex. gold, silver, etc)')
+            print("-------------------")
         elif wealth_type not in self.wealth:
             print(f'You do not have any {wealth_type}')
+            print("-------------------")
         elif self.wealth[wealth_type] - money < 0:
             print(f'You do not have enough {wealth_type}. You only have {self.wealth[wealth_type]} {wealth_type}')
+            print("-------------------")
         else:
             self.wealth[wealth_type] -= money
     def make_money(self, wealth_type, money):
         if type(money) != int and type(wealth_type) != str:
             print('Input must be integer')
             print('Type must be string (ex. gold, silver, etc)')
+            print("-------------------")
         elif wealth_type not in self.wealth:
             self.wealth[wealth_type] = 0
             self.wealth[wealth_type] += money
@@ -511,10 +547,12 @@ class Character:
             self.death_saves['failures'].append('failure')
         if len(self.death_saves['successes']) == 3:
             print('Creature stabilized')
+            print("-------------------")
             self.death_saves['successes'] = []
             self.death_saves['failures'] = []
         if len(self.death_saves['failures']) == 3:
             print('You are dead')
+            print("-------------------")
             self.death_saves['successes'] = []
             self.death_saves['failures'] = []
         
@@ -523,14 +561,18 @@ class Character:
         if isinstance(item_name, str) and isinstance(item_count, int):
             self.equipment[item_name] = item_count
             print(f"Item successfully added. You have {item_count} {item_name}")
+            print("-------------------")
         else:
             print("Two paramters needed: item_name (string) and item_count (integer)")
+            print("-------------------")
 
 # remove/use items 
     def use_item(self, item_name):
         if isinstance(item_name, str):
             if self.equipment.get(item_name, None) == None:
                 print(f"You do not have ***{item_name}*** in your inventory.")
+                print("-------------------")
             else:
                 self.equipment[item_name] -= 1
                 print(f"You successfully used 1 {item_name}")
+                print("-------------------")

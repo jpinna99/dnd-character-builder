@@ -60,6 +60,7 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
     def take_short_rest(self):
         self.spells["warlock"]['spell slots']['available'] = self.spells["warlock"]['spell slots']['maximum']
         print(f'Short rest successful. You now have {self.spells["warlock"]['spell slots']['available']} available Warlock spell slot(s) and {self.spells["sorcerer"]['spells']['spell slots']} Sorcerer spell slots')
+        print("-------------------")
 
     def take_long_rest(self):
         self.spells["warlock"]['spell slots']['available'] = self.spells["warlock"]['spell slots']['maximum']
@@ -69,14 +70,18 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
         self.shadow_armor["number of uses remaining"] = self.ability_scores['charisma']['modifier']
         self.reapers_blade["number of uses remaining"] = self.ability_scores['charisma']['modifier']
         print(f'Long rest successful. You now have {self.spells["warlock"]['spell slots']['available']} available Warlock spell slot(s) and {self.spells["sorcerer"]['spells']['spell slots']} Sorcerer spell slots and {self.HP['current']} HP')
+        print("-------------------")
 
     def use_crossbow(self):
         if self.equipment["weapons"]['crossbow bolts'] == 0: 
             print("No crossbow bolts left")
+            print("-------------------")
         elif "light crossbow" not in self.equipment["active"]["weapons"]:
             print("Weapon not active")
+            print("-------------------")
         else:
             print("Crossbow fired")
+            print("-------------------")
             self.equipment["weapons"]['crossbow bolts']["quantity"] -= 1
 
     def add_spell(self, spell_name, dnd_class):
@@ -94,6 +99,7 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
             print("You do not have high enough Warlock slot level or Sorcerer spell slots to cast this spell")
         elif self.spells['warlock']['spell slots']['available'] == 0 and self.spells['sorcerer']["spells"]['spell slots'][spell_level]['available'] == 0:
             print("Cannot cast spell. No spell slots remaining of any class")
+            print("-------------------")
         else:
             spell_list = []
             for warlock_spell in self.spells['warlock']['spells']['spell list']:
@@ -118,6 +124,7 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
                 print("Spell not found. Known spells: ")
                 for spell in spell_list:
                     print(f'   {spell['name']}')
+        print("-------------------")
 
     # method below is specific to sorcerer as new_class
     def multiclass(self, original_class, new_class):
@@ -259,7 +266,7 @@ soveliss.cast_spell('ice knife')
 soveliss.cast_spell('chaos bolt')
 soveliss.take_short_rest()
 
-
+    
 
 
 

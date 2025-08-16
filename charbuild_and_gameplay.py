@@ -244,6 +244,11 @@ soveliss.add_cantrip('mage hand', 'sorcerer')
 soveliss.tides_of_chaos = """Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature."""
 
 
+# Level up Soveliss to Warlock level 2
+# fiendish_vigor = {'name': 'Fiendish Vigor',
+                #   'description': "You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components."}
+# soveliss.add_invocation(fiendish_vigor)
+
 
 ##########################################################################################
 ##########################################################################################

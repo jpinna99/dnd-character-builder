@@ -28,13 +28,30 @@ Soveliss collected a children's book
 We get to Greenest around sunset
 We enter Greenest and it is being attacked by a dragon
 Three guards are interrogating what looks to be a dragon cult member
+Titus suggested killing the cult member, the guard did, and we investigate the body
+Hildy found a tattoo on his right wrist of a multiheaded dragon, and a flashy ring on the other hand that looked like dragon shaped into a T.
+
+We fought 7 Kobolds to rescue a fleeing family.
+
+Before arriving at the keep, we fought off an ambush from two humanoids and an Ambush Drake
 
 In battle:
-Soveliss has +2 to AC and Dex saving throws with half cover
+***Soveliss has +2 to AC and Dex saving throws with half cover***
 
-We talk to the family we saved
-
-We think we meet Escobar the Red (red-headed dwarf)
+We met Escobert the Red (red-headed dwarf)
 We enter the keep and gain intel (see recap)
+
+We met Governor Nighthill (fellow Blade) who gave us a series of missions to get through the night:
+- Secure the Old Tunnel
+- Interrogate a prisoner for more intel (no captive prisoners at the moment)
+- Go check on the Sanctuary
+- Go check on the Sally Port (suggested point of entry by the raiders)
+
+We met Thedra and the Roaches: Thedra (female gnome, leader), Keel (Goliath), Snuffy (Kenku, good healer)
+
 Items: gold, medallion (Hildy)
+
+
+
+# 8/22/2025 Notes
 

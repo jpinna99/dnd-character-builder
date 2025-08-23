@@ -271,6 +271,17 @@ soveliss.cast_spell('ice knife')
 soveliss.cast_spell('chaos bolt')
 soveliss.take_short_rest()
 
+# 8/22/2025 Session
+# Snuffy gave us all effect of long rest in the keep
+soveliss.take_long_rest()
+soveliss.cast_spell("ice knife")
+soveliss.use_item('Potion of Minor Healing')  # gave 1 to Titus
+# Level up to Level 3
+
+# 8/29/2025 Session
+
+
+
     
 
 

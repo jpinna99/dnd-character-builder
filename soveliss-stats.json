@@ -130,7 +130,7 @@
         "set of common clothes": 1,
         "pouch containing 10 gp": 1,
         "Potion of Draconic Sight": 1,
-        "Potion of Minor Healing": 2,
+        "Potion of Minor Healing": 1,
         "Children's learning book (found on path to Greenest)": 1
     },
     "wealth": {
@@ -339,7 +339,7 @@
                 ]
             },
             "spell slots": {
-                "available": 1,
+                "available": 0,
                 "maximum": 1
             },
             "slot level": 1
@@ -443,7 +443,7 @@
                 ],
                 "spell slots": {
                     "1st-level": {
-                        "available": 1,
+                        "available": 2,
                         "maximum": 2
                     }
                 }

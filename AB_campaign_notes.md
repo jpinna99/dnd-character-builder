@@ -54,4 +54,13 @@ Items: gold, medallion (Hildy)
 
 
 # 8/22/2025 Notes
+We go down the Old Tunnel
+We fight two swarms of rats!!! Ewww...
+We are then ambushed by two cultists and several kobolds. We take 1 cultist captive (has a chevron tattoo).
+
+We go to the Sally Port and win.
+The Reaper appears before me and threatens me with death if I am not more corageous. 
+We see that the adult dragon is blue.
+We start heading toward the Sanctuary for next time
+We level up to level 3.
 

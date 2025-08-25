@@ -91,13 +91,6 @@ class Warlock(Character):
         self.HP['max'] = 8 + self.ability_scores['constitution']['modifier']
         self.HP['current'] = self.HP['max']
 
-    def add_invocation(self, invocation):
-        if isinstance(invocation, dict):
-            self.invocations.append(invocation)
-        else:
-            print("Invocation must be dictionary")
-            print("-------------------")
-
     def add_initiative_bonus(self):
         self.initiative_bonus += self.ability_scores['dexterity']['modifier']
 
@@ -125,7 +118,7 @@ class Warlock(Character):
         for invocation in invocations:
             for list_item in invocations_list:
                 if list_item['name'].lower() == invocation.lower():
-                    self.invocations['invocations list'].append(list_item)
+                    self.invocations.append(list_item)
 
 
 

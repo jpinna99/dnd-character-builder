@@ -559,7 +559,7 @@ class Character:
 # add items to inventory
     def add_to_inventory(self, item_name, item_count):
         if isinstance(item_name, str) and isinstance(item_count, int):
-            self.equipment[item_name] = item_count
+            self.equipment[item_name.lower()] = item_count
             print(f"Item successfully added. You have {item_count} {item_name}")
             print("-------------------")
         else:
@@ -568,6 +568,7 @@ class Character:
 
 # remove/use items 
     def use_item(self, item_name):
+        item_name = item_name.lower()
         if isinstance(item_name, str):
             if self.equipment.get(item_name, None) == None:
                 print(f"You do not have ***{item_name}*** in your inventory.")

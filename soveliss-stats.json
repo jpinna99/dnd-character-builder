@@ -19,8 +19,8 @@
     ],
     "background": "sage",
     "HP": {
-        "current": 18,
-        "max": 18,
+        "current": 25,
+        "max": 25,
         "temp": 0
     },
     "armor_class": 12,
@@ -129,9 +129,9 @@
         "letter from dead colleague posing question I have been unable to answer": 1,
         "set of common clothes": 1,
         "pouch containing 10 gp": 1,
-        "Potion of Draconic Sight": 1,
-        "Potion of Minor Healing": 1,
-        "Children's learning book (found on path to Greenest)": 1
+        "potion of draconic sight": 1,
+        "potion of minor healing": 1,
+        "children's learning book (found on path to greenest)": 1
     },
     "wealth": {
         "gold": 10
@@ -239,7 +239,18 @@
         }
     },
     "patron": "The Reaper",
-    "invocations": [],
+    "invocations": [
+        {
+            "name": "Fiendish Vigor",
+            "prerequisite": null,
+            "desc": "<p>You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</p>"
+        },
+        {
+            "name": "Eldritch Mind",
+            "prerequisite": null,
+            "desc": "<p>You have advantage on Constitution saving throws that you make to maintain your concentration on a spell.</p>"
+        }
+    ],
     "specialty": "Discredited Academic",
     "ideal": "The path to power and self-improvement is through knowledge.",
     "flaw": "I am easily distracted by the promise of information.",
@@ -304,7 +315,7 @@
                 ]
             },
             "spells": {
-                "known": 2,
+                "known": 3,
                 "spell list": [
                     {
                         "name": "Expeditious Retreat",
@@ -335,12 +346,28 @@
                         "level": "1st-level",
                         "school": "Conjuration",
                         "class": "Druid, Sorcerer, Wizard"
+                    },
+                    {
+                        "name": "Hex",
+                        "desc": "<p>You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 necrotic damage to the target whenever you hit it with an attack. Also choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability.</p><p>If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.</p><p>A remove curse cast on the target ends this spell early.</p>",
+                        "higher_level": "<p>When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours.</p>",
+                        "page": "phb 251",
+                        "range": "90 feet",
+                        "components": "V, S, M",
+                        "material": "The petrified eye of a newt.",
+                        "ritual": "no",
+                        "duration": "Up to 1 hour",
+                        "concentration": "yes",
+                        "casting_time": "1 bonus action",
+                        "level": "1st-level",
+                        "school": "Enchantment",
+                        "class": "Warlock"
                     }
                 ]
             },
             "spell slots": {
-                "available": 0,
-                "maximum": 1
+                "available": 1,
+                "maximum": 2
             },
             "slot level": 1
         },
@@ -451,7 +478,7 @@
         }
     },
     "level": {
-        "warlock": 1,
+        "warlock": 2,
         "sorcerer": 1
     },
     "proficiencies": {

@@ -12,6 +12,9 @@ from dice_rolls import *
 with open('formatted-master-spell-list.json', 'r', encoding='utf-8') as master_spell_list:
     master_spell_list = json.load(master_spell_list)
 
+# open invocations list and save as variable
+with open('formatted-invocations-list.json', 'r', encoding='utf-8') as invocations_list:
+    invocations_list = json.load(invocations_list)
 
 
 # create master character class for unique character, incorporating classes from other modules
@@ -170,6 +173,15 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
         # add new class to object and format as list
         self.DnDclass = [original_class, new_class]
 
+    # Method below levels up Soveliss to Warlock 2 / Sorcerer 1
+    def level_up_3(self, invocation1, invocation2, additional_spell, spell_class):
+        self.spells['warlock']['spell slots']['maximum'] = 2
+        self.add_spell(additional_spell, spell_class)
+        self.add_warlock_invocations(invocation1, invocation2)
+        self.HP['max'] += 5 + self.ability_scores['constitution']['modifier']
+        self.level['warlock'] += 1
+        self.spells['warlock']['spells']['known'] = 3
+
 
 
 def isolate_sorcerer_spells_for_soveliss():
@@ -244,10 +256,8 @@ soveliss.add_cantrip('mage hand', 'sorcerer')
 soveliss.tides_of_chaos = """Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature."""
 
 
-# Level up Soveliss to Warlock level 2
-# fiendish_vigor = {'name': 'Fiendish Vigor',
-                #   'description': "You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components."}
-# soveliss.add_invocation(fiendish_vigor)
+# Level up Soveliss to Warlock level 2 / Sorcerer 1
+soveliss.level_up_3('fiendish vigor', 'eldritch mind', 'hex', 'warlock')
 
 
 ##########################################################################################
@@ -264,12 +274,12 @@ soveliss.tides_of_chaos = """Starting at 1st level, you can manipulate the force
 # 8/15/2025 Session:
 soveliss.add_to_inventory('Potion of Draconic Sight', 1)
 soveliss.add_to_inventory('Potion of Minor Healing', 2)
-soveliss.take_long_rest()
+# soveliss.take_long_rest()
 soveliss.add_to_inventory("Children's learning book (found on path to Greenest)", 1)
 # During battle, Soveliss dove behind some rocks for half cover and gained +2 to AC and Dex saves
-soveliss.cast_spell('ice knife')
-soveliss.cast_spell('chaos bolt')
-soveliss.take_short_rest()
+# soveliss.cast_spell('ice knife')
+# soveliss.cast_spell('chaos bolt')
+# soveliss.take_short_rest()
 
 # 8/22/2025 Session
 # Snuffy gave us all effect of long rest in the keep

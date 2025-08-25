@@ -237,8 +237,8 @@ fetch('soveliss-stats.json')
                 spacer.innerHTML = "------";
                 newInfo.appendChild(spacer);
             }
-            const parsedDatSorcerer = JSON.parse(JSON.stringify(data.spells["sorcerer"]["spells"]["spell list"]));
-            for (let spell of parsedDatSorcerer) {
+            const parsedDataSorcerer = JSON.parse(JSON.stringify(data.spells["sorcerer"]["spells"]["spell list"]));
+            for (let spell of parsedDataSorcerer) {
                 let spelldata = document.createElement('p');
                 spelldata.innerHTML = JSON.stringify(spell, null, 2);
                 newInfo.appendChild(spelldata);

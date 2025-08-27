@@ -56,11 +56,13 @@ Items: gold, medallion (Hildy)
 # 8/22/2025 Notes
 We go down the Old Tunnel
 We fight two swarms of rats!!! Ewww...
-We are then ambushed by two cultists and several kobolds. We take 1 cultist captive (has a chevron tattoo).
-
-We go to the Sally Port and win.
+We are then ambushed by two cultists and several kobolds. We take 1 cultist captive (who has a chevron tattoo).
+We decide to take the prisoner to the Roaches before Governor Nighthill.
+We and the Roaches interrogate the prisoner and learn they are trying to gather a horde for their Queen (presumably Tiamat).
+Thedra snaps at one point and cuts out the man's tongue while blaming him and his group for the deaths of her daughter and wife.
+We go to the Sally Port to defend the Keep against invasion and eventually win.
 The Reaper appears before me and threatens me with death if I am not more corageous. 
 We see that the adult dragon is blue.
 We start heading toward the Sanctuary for next time
-We level up to level 3.
+We level up to Level 3.
 

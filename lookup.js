@@ -566,7 +566,7 @@ fetch('soveliss-stats.json')
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
             const tidesOfChaos = document.createElement('p');
-            tidesOfChaos.innerHTML = JSON.stringify(data.tides_of_chaos, null, 2);
+            tidesOfChaos.innerHTML = "Tides of Chaos: " + JSON.stringify(data.tides_of_chaos, null, 2);
             newInfo.appendChild(tidesOfChaos);
             infoContainer.appendChild(newInfo);
         })

@@ -285,12 +285,17 @@ soveliss.add_to_inventory("Children's learning book (found on path to Greenest)"
 # Snuffy gave us all effect of long rest in the keep
 soveliss.take_long_rest()
 soveliss.cast_spell("ice knife")
-soveliss.use_item('Potion of Minor Healing')  # gave 1 to Titus
+soveliss.use_item('potion of Minor healing')  # gave 1 to Titus
 # Level up to Level 3
 
 # 8/29/2025 Session
-
-
+soveliss.take_short_rest()  # DM gave us ability to use new spell slots immediately after level up
+soveliss.take_damage(7)  # retain HP before level up
+soveliss.set_temp_HP(5)  # Soveliss uses Fiendish Vigor invocation
+soveliss.cast_spell('ice knife')
+soveliss.cast_spell('chaos bolt')
+soveliss.cast_spell('magic missile')
+soveliss.add_to_inventory('potion of minor healing', 2)
 
     
 

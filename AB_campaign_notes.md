@@ -66,3 +66,24 @@ We see that the adult dragon is blue.
 We start heading toward the Sanctuary for next time
 We level up to Level 3.
 
+
+# 8/29/2025 Notes
+We overhear some people discussing the Temple of Chauntea, the Priest Adaen, praying that their agriculture and fields will survive
+The people at the Temple of Chauntea worship a deity of agriculture
+We meet Scampers the Kobold who begs us not to kill him and shows us a map of patrols around the city
+As a team, and with Scampers, we eliminate the group at the backdoor. We hear shouting from the enemy (Dragonclaw) berating his underlings into working faster to break down the wall on the other side of the Temple
+We win the battle and gain:
+- A Shield of Holding
+- Vial of Quicksilver
+- A purple and gold ring depicting a multi-headed dragon
+- about 10 gold pieces
+We return to the Keep where the saved families and Scampers are
+We meet Reylynn, a Ranger and member of the Roaches, who reports that most of the Roaches are alive and well but they lost contact with their comrades at the Mill
+Poor Snuffy the Kenku is saddened because his best friend was at the Mill
+Gov Nighthill and Escobert confirm that the Mill was burned down in the attack. Nighthill is devising a plan to appeal for help from neighboring villages and towns.
+Thorgar shares more about himself: we learn that he ended up in Greenest with his group on a mission commissioned by the Slayers Take (monster hunting guild) to kill a hag, but got trapped here by the attack.
+We then hear the roar of the dragon, which has returned and fired its breath weapon at those on the top of the Keep, and steel ourselves for battle...
+
+
+
+

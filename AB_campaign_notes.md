@@ -77,6 +77,7 @@ We win the battle and gain:
 - Vial of Quicksilver
 - A purple and gold ring depicting a multi-headed dragon
 - about 10 gold pieces
+
 We return to the Keep where the saved families and Scampers are
 We meet Reylynn, a Ranger and member of the Roaches, who reports that most of the Roaches are alive and well but they lost contact with their comrades at the Mill
 Poor Snuffy the Kenku is saddened because his best friend was at the Mill

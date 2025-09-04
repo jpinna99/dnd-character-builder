@@ -23,7 +23,7 @@ Recap of items gained - 7 potions of minor healing (Titus used one so we have si
 # 8/15/2025 Notes
 Traveling to Greenest to meet Governor Nighthill.
 We divided up the items accordingly.
-Hildy talked to birds and found at that some humanoids were fleeing Greenest.
+Hildy talked to birds and found out that some humanoids were fleeing Greenest.
 Soveliss collected a children's book.
 We get to Greenest around sunset.
 We enter Greenest and it is being attacked by a dragon.
@@ -55,7 +55,7 @@ Items: gold, medallion (Hildy)
 
 # 8/22/2025 Notes
 We go down the Old Tunnel.
-We fight two swarms of rats!!! Ewww...
+We fight two swarms of rats (ewww...)!!!
 We are then ambushed by two cultists and several kobolds. We take 1 cultist captive (who has a chevron tattoo).
 We decide to take the prisoner to the Roaches before Governor Nighthill.
 We and the Roaches interrogate the prisoner and learn they are trying to gather a horde for their Queen (presumably Tiamat).
@@ -71,7 +71,7 @@ We level up to Level 3.
 We overhear some people discussing the Temple of Chauntea, the Priest Adaen, praying that their agriculture and fields will survive.
 The people at the Temple of Chauntea worship a deity of agriculture.
 We meet Scampers the Kobold who begs us not to kill him and shows us a map of patrols around the city.
-As a team, and with Scampers, we eliminate the group at the backdoor. We hear shouting from the enemy(Dragonclaw) berating his underlings into working faster to break down the wall on the other side of the Temple.
+As a team, and with Scampers, we eliminate the group at the backdoor. We hear shouting from the enemy (Dragonclaw) berating his underlings into working faster to break down the wall on the other side of the Temple.
 We win the battle and gain:
 - A Shield of Holding
 - Vial of Quicksilver
@@ -83,7 +83,7 @@ We meet Reylynn, a Ranger and member of the Roaches, who reports that most of th
 Poor Snuffy the Kenku is saddened because his best friend was at the Mill.
 Gov Nighthill and Escobert confirm that the Mill was burned down in the attack. Nighthill is devising a plan to appeal for help from neighboring villages and towns.
 Thorgar shares more about himself: we learn that he ended up in Greenest with his group on a mission commissioned by the Slayers Take (monster hunting guild) to kill a hag, but got trapped here by the attack.
-We then hear the roar of the dragon, which has returned and fired its breath weapon at those on the top of the Keep, and steel ourselves for battle...
+We then hear the roar of the dragon, which has returned and fired its breath weapon at those on the top of the Keep, and we steel ourselves for battle...
 
 
 

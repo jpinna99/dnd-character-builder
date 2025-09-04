@@ -1,9 +1,9 @@
 # 8/1/2025 Notes
-Start at Level 1. After first session, we will be at Level 2
+Start at Level 1. After first session, we will be at Level 2.
 
-Our characters already did a mission together, but it did not go well
-Guildmaster Varis Flintmantle believes that there is a dragon cult out there trying to raise Tiamat
-She is giving us a second opportunity to help her thwart the dragon cult
+Our characters already did a mission together, but it did not go well.
+Guildmaster Varis Flintmantle believes that there is a dragon cult out there trying to raise Tiamat.
+She is giving us a second opportunity to help her thwart the dragon cult.
 
 Failed mission: earlier that day, we were escorting someone to Oakvale, Lorn Rennic, a minor noble of forest elf ancestry. It should have been simple, but things quickly unraveled. There was a goblin ambush and luckily Lord Rennic revealed himself as skilled swordsman. We managed to fight off the goblins. Lord Rennic unimpressed with teamwork, but was impressed with individual talents. "They have the skills. Now if only they'd remember they're supposed to use them together."
 
@@ -21,25 +21,25 @@ Recap of items gained - 7 potions of minor healing (Titus used one so we have si
 
 
 # 8/15/2025 Notes
-Traveling to Greenest to meet Governor Nighthill
-We divided up the items accordingly
-Hildy talked to birds and found at that some humanoids were fleeing Greenest
-Soveliss collected a children's book
-We get to Greenest around sunset
-We enter Greenest and it is being attacked by a dragon
-Three guards are interrogating what looks to be a dragon cult member
-Titus suggested killing the cult member, the guard did, and we investigate the body
+Traveling to Greenest to meet Governor Nighthill.
+We divided up the items accordingly.
+Hildy talked to birds and found at that some humanoids were fleeing Greenest.
+Soveliss collected a children's book.
+We get to Greenest around sunset.
+We enter Greenest and it is being attacked by a dragon.
+Three guards are interrogating what looks to be a dragon cult member.
+Titus suggested killing the cult member, the guard did, and we investigate the body.
 Hildy found a tattoo on his right wrist of a multiheaded dragon, and a flashy ring on the other hand that looked like dragon shaped into a T.
 
 We fought 7 Kobolds to rescue a fleeing family.
 
-Before arriving at the keep, we fought off an ambush from two humanoids and an Ambush Drake
+Before arriving at the keep, we fought off an ambush from two humanoids and an Ambush Drake.
 
 In battle:
 ***Soveliss has +2 to AC and Dex saving throws with half cover***
 
-We met Escobert the Red (red-headed dwarf)
-We enter the keep and gain intel (see recap)
+We met Escobert the Red (red-headed dwarf).
+We enter the keep and gain intel (see recap).
 
 We met Governor Nighthill (fellow Blade) who gave us a series of missions to get through the night:
 - Secure the Old Tunnel
@@ -54,7 +54,7 @@ Items: gold, medallion (Hildy)
 
 
 # 8/22/2025 Notes
-We go down the Old Tunnel
+We go down the Old Tunnel.
 We fight two swarms of rats!!! Ewww...
 We are then ambushed by two cultists and several kobolds. We take 1 cultist captive (who has a chevron tattoo).
 We decide to take the prisoner to the Roaches before Governor Nighthill.
@@ -63,24 +63,24 @@ Thedra snaps at one point and cuts out the man's tongue while blaming him and hi
 We go to the Sally Port to defend the Keep against invasion and eventually win.
 The Reaper appears before me and threatens me with death if I am not more corageous. 
 We see that the adult dragon is blue.
-We start heading toward the Sanctuary for next time
+We start heading toward the Sanctuary for next time.
 We level up to Level 3.
 
 
 # 8/29/2025 Notes
-We overhear some people discussing the Temple of Chauntea, the Priest Adaen, praying that their agriculture and fields will survive
-The people at the Temple of Chauntea worship a deity of agriculture
-We meet Scampers the Kobold who begs us not to kill him and shows us a map of patrols around the city
-As a team, and with Scampers, we eliminate the group at the backdoor. We hear shouting from the enemy (Dragonclaw) berating his underlings into working faster to break down the wall on the other side of the Temple
+We overhear some people discussing the Temple of Chauntea, the Priest Adaen, praying that their agriculture and fields will survive.
+The people at the Temple of Chauntea worship a deity of agriculture.
+We meet Scampers the Kobold who begs us not to kill him and shows us a map of patrols around the city.
+As a team, and with Scampers, we eliminate the group at the backdoor. We hear shouting from the enemy(Dragonclaw) berating his underlings into working faster to break down the wall on the other side of the Temple.
 We win the battle and gain:
 - A Shield of Holding
 - Vial of Quicksilver
 - A purple and gold ring depicting a multi-headed dragon
 - about 10 gold pieces
 
-We return to the Keep where the saved families and Scampers are
-We meet Reylynn, a Ranger and member of the Roaches, who reports that most of the Roaches are alive and well but they lost contact with their comrades at the Mill
-Poor Snuffy the Kenku is saddened because his best friend was at the Mill
+We return to the Keep where the saved families and Scampers are.
+We meet Reylynn, a Ranger and member of the Roaches, who reports that most of the Roaches are alive and well but they lost contact with their comrades at the Mill.
+Poor Snuffy the Kenku is saddened because his best friend was at the Mill.
 Gov Nighthill and Escobert confirm that the Mill was burned down in the attack. Nighthill is devising a plan to appeal for help from neighboring villages and towns.
 Thorgar shares more about himself: we learn that he ended up in Greenest with his group on a mission commissioned by the Slayers Take (monster hunting guild) to kill a hag, but got trapped here by the attack.
 We then hear the roar of the dragon, which has returned and fired its breath weapon at those on the top of the Keep, and steel ourselves for battle...

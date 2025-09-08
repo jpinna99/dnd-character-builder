@@ -296,6 +296,8 @@ soveliss.cast_spell('ice knife')
 soveliss.cast_spell('chaos bolt')
 soveliss.cast_spell('magic missile')
 soveliss.add_to_inventory('potion of minor healing', 2)
+soveliss.cast_spell('hex')
+soveliss.take_long_rest()
 
     
 

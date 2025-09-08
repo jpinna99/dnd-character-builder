@@ -19,9 +19,9 @@
     ],
     "background": "sage",
     "HP": {
-        "current": 18,
+        "current": 25,
         "max": 25,
-        "temp": 5
+        "temp": 0
     },
     "armor_class": 12,
     "proficiency_bonus": 2,
@@ -366,7 +366,7 @@
                 ]
             },
             "spell slots": {
-                "available": 0,
+                "available": 2,
                 "maximum": 2
             },
             "slot level": 1
@@ -470,7 +470,7 @@
                 ],
                 "spell slots": {
                     "1st-level": {
-                        "available": 1,
+                        "available": 2,
                         "maximum": 2
                     }
                 }

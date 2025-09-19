@@ -193,6 +193,16 @@ fetch('soveliss-stats.json')
             infoContainer.appendChild(newInfo);
         })
 
+        const lookUpBoons = document.getElementById("look-up-boons");
+        lookUpBoons.addEventListener('click', e => {
+            const infoContainer = document.getElementById('info-container');
+            infoContainer.innerHTML = '';
+            const newInfo = document.createElement('div');
+            const SovBoons = document.createElement('p');
+            SovBoons.innerHTML = JSON.stringify(data.boons, null, 2);
+            newInfo.appendChild(SovBoons);
+            infoContainer.appendChild(newInfo);
+        })
 
         const lookUpCantrips = document.getElementById("look-up-cantrips");
         lookUpCantrips.addEventListener('click', e => {

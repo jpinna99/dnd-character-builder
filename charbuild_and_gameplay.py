@@ -297,9 +297,8 @@ soveliss.cast_spell('chaos bolt')
 soveliss.cast_spell('magic missile')
 soveliss.add_to_inventory('potion of minor healing', 2)
 soveliss.cast_spell('hex')
+soveliss.__dict__['boons'] = {"Boon of the Fearless Heart": "Once per long rest, the character can automatically succeed on a saving throw against being frightened."}
 soveliss.take_long_rest()
-
-    
 
 
 

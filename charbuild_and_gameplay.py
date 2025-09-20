@@ -300,6 +300,18 @@ soveliss.cast_spell('hex')
 soveliss.__dict__['boons'] = {"Boon of the Fearless Heart": "Once per long rest, the character can automatically succeed on a saving throw against being frightened."}
 soveliss.take_long_rest()
 
+# 9/19/2025 Session
+soveliss.cast_spell('ice knife')
+soveliss.cast_spell('hex')
+soveliss.take_damage(1)
+
+
+
+
+
+
+
+
 
 
 

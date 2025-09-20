@@ -19,7 +19,7 @@
     ],
     "background": "sage",
     "HP": {
-        "current": 25,
+        "current": 24,
         "max": 25,
         "temp": 0
     },
@@ -366,7 +366,7 @@
                 ]
             },
             "spell slots": {
-                "available": 2,
+                "available": 0,
                 "maximum": 2
             },
             "slot level": 1

@@ -1,4 +1,40 @@
-# 8/1/2025 Notes
+# List of Known Characters
+## Oakvale
+- Vorath: blue dragonborn blacksmith at the Ironclad Hearth who asks us to retrieve a hammer from the Mystic Cavern. He is the man who defeated death  
+- Bramblin: A Blade gnome who we met in an inn and gave us information and rendevous point to meet Vorath. We encounter him again in the raider's camp where he is a prisoner and near death.
+- Varis: A Blade tiefling who hired us to defend Lord Rennic, then gave us another chance to prove ourselves
+
+## Greenest
+- Thorgar Ironvein: wound up in Greenest with his group on a mission commissioned by the Slayers Take (monster hunting guild) to kill a hag, but got trapped here in Greenest by the siege on the town.
+- Escobert the Red: red-headed dwarf who works for Governor Nighthill in Greenest. A military expert and competent fighter, Thalia recognized him when they met
+- Governor Nighthill: leader of Greenest. Pays us to find out about raider's camp. Gives us use of safe space for home base.
+- Priest Aeden: priest of the Temple of Chauntea
+
+## Roaches
+- Thedra: female gnome
+- Keel: male goliath 
+- Snuffy: male kenku
+- Reylynn: female ranger
+
+
+## Enemies
+- Velthis the Mad Elf Wizard: an evil, ruthless wizard who Thalia witnessed slaughter thousands of dwarves. Not a cultist, but is in the employ of the cult
+- Rezmir: black half-dragon, leader of the raider's camp (or entire cult)
+- Langdedrosa Cyanwrath: blue half-dragon
+- Furlam Mondath: the Wearer of Purple
+
+
+## Other
+- Lorn Rennic
+- Scampers: a kobold who defected to our side and is now our ally
+
+
+# Items Gained
+
+
+
+# Session Notes
+## 8/1/2025
 Start at Level 1. After first session, we will be at Level 2.
 
 Our characters already did a mission together, but it did not go well.
@@ -20,7 +56,7 @@ Recap of items gained - 7 potions of minor healing (Titus used one so we have si
 
 
 
-# 8/15/2025 Notes
+## 8/15/2025 Notes
 Traveling to Greenest to meet Governor Nighthill.
 We divided up the items accordingly.
 Hildy talked to birds and found out that some humanoids were fleeing Greenest.
@@ -53,7 +89,7 @@ Items: gold, medallion (Hildy)
 
 
 
-# 8/22/2025 Notes
+## 8/22/2025 Notes
 We go down the Old Tunnel.
 We fight two swarms of rats (ewww...)!!!
 We are then ambushed by two cultists and several kobolds. We take 1 cultist captive (who has a chevron tattoo).
@@ -67,7 +103,7 @@ We start heading toward the Sanctuary for next time.
 We level up to Level 3.
 
 
-# 8/29/2025 Notes
+## 8/29/2025 Notes
 We overhear some people discussing the Temple of Chauntea, the Priest Adaen, praying that their agriculture and fields will survive.
 The people at the Temple of Chauntea worship a deity of agriculture.
 We meet Scampers the Kobold who begs us not to kill him and shows us a map of patrols around the city.
@@ -88,4 +124,63 @@ We then hear the roar of the dragon, which has returned and fired its breath wea
 
 
 
-# 9/19/2025 Notes
+## 9/6/2025 Notes
+We begin by facing off with the dragon (Lennithon).
+An old absent-minded Wizard Aurelion appears to help with the battle. We later learn he is Vorath's friend.
+Lennithon is most interested in Soveliss after he critically hits it. He lets the group decide whether they wish to embark on his trials in lieu of battle. We accept.
+After the trials, everyone except Thalia receives a boon:
+- Soveliss: Boon of the Fearless Heart — Once per long rest, the character can automatically succeed on a saving throw against being frightened.
+- Titus: Boon of the Cat’s Step — Once per long rest you can add +5 feet to movement speed or may re-roll one failed dexterity saving throw per long rest.
+- Hildy: Boon of Titan’s Grip — Once per long rest you can add +5 on strength check or saving throws.
+Lennithon the Dragon honors the agreement and departs.
+We set off toward the Mill to learn what we can, when a half-dragon emerges and offers a one-on-one challenge. We buff Hildy as a raptor, who defeats her foe.
+Later, Governor Nighthill gives us 2 potions and keys to our new base of operations. Nighthill offers us 250 gold pieces if we help find the raider's camp.
+We meet Nesim Waladra, an injured monk who wishes to find their brother Leosin. We agree to help them.
+We end the session in view of an outpost group of enemies, including the mad elf Wizard Velthis, who Thalia recognizes from her past as a merciless slaughterer of thousands of dwarves.
+
+
+
+## 9/19/2025 Notes
+We begin the session leaping into battle and surprising the camp. Velthis gets away, but we kill everyone else except for one cultist who we interrogate for information. Upon doing so, we learn about:
+- Rezmir: black half-dragon, leader.
+- Langdedrosa Cyanwrath: blue half-dragon who was beaten in battle and is resting at the middle of camp. Langedrosa can always be seen near and around Furlam.
+- Furlam Mondath: not much known about her at this point.
+- Items gained: stormpiercer rifle, religious artifacts of chauntea, jewerly, gold, plan to avoid rear guard and make it to camp unscathed.
+We make it to the camp and see hundreds of cultists, kobolds, drakes, etc.
+We see prisoners being escorted: 
+- Bramblin (from the very first session)
+- A kenku
+- Two Roaches
+Thalia is handed a whip and told to do guard duty.
+Hildy is asked to help with healing someone.
+The group splits in two and goes off (Thalia/Titus & Hildy/Soveliss).
+
+
+
+## 9/26/2025 Notes
+Hildy successfully heals the drake and Soveliss detects that this drake is not what it seems.
+Titus gets into fight with a half-dragon named Grakthar the Green. Grakthar wins, but Titus gains his approval and is invited to his tent for a drink.
+Thalia is accused of letting prisoners go and is bound and brought to be locked up and interrogated by Rezmir, the black half-dragon leader.
+We learn that the drake is actually a shapeshifter, who we can consider an ally because we helped them.
+We gain cultist uniforms and sneak up to where Thalia is being held. Hildy turns into a small animal to do some reconnaisance.
+We see Thalia and Leosin, as well as Rezmir, Cyanwrath and Furlam in the vicinity.
+We successfully sneakily break the locks and sneak away, hiding in the Out Cove.
+We learn that the shapeshifter is named Daereth and he was created by the mad elf Wizard Velthis.
+We learn that there are likely dragon eggs in the cave in the back of the camp. They are trying to bring Tiamat back.
+
+
+
+## 10/3/2025 Notes
+The start of a dungeon: The Dragon Eggs Cave
+We decide to enter and see some dragonclaws at the beginning, who retreat hastily into the cave.
+We go down some stairs. Titus triggers a trap but is able to jump and mitigate/avoid damage when the stairs become a slide.
+Hildy finds a fungus garden and identifies a violet fungus that will attack us if we are not careful.
+We find a room with a lot of bats and stealth past them without making a ruckus.
+We go left at the tri-fork.
+Titus triggers a trap and manages to evade danger, but Daereth gets piereced by foot spikes and his poisoned.
+We fight some kobolds and find a key, we think to a room with 3 drakes in it.
+Fred flies ahead and Titus triggers yet another trap and boulders fall on him dealing bludgeoning damage.
+We get into a fight with more kobolds and win. We send Daereth back to Greenest.
+We take hostages and learn that Cyanwrath is up ahead, there are eggs in the dungeon, the Wearer of Purple (Furlam Mondath) is somewhere there as well.
+We meet Cyanwrath and his goons, who challenges Hildy to a one-on-one, but Soveliss immediately casts Magic Missile, provoking group battle. We win, but are worse for wear.
+Hildy gains the Sickle of Sporegrowth.

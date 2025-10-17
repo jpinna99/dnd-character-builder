@@ -193,6 +193,7 @@ We see prisoners being escorted:
 - Bramblin (from the very first session)
 - A kenku
 - Two Roaches
+
 Thalia is handed a whip and told to do guard duty.
 Hildy is asked to help with healing someone.
 The group splits in two and goes off (Thalia/Titus & Hildy/Soveliss).

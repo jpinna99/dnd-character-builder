@@ -33,15 +33,20 @@
 # Items Gained
 - 7 minor potions of healing
 - Magical items from Vorath: 
-    1. Embersteel Band (Wondrous Item, Uncommon)
+    1. Embersteel Band (Wondrous Item, Uncommon):
         A blackened iron ring forged by The Blacksmith.
         While wearing it, once per long rest, you can reroll a failed Dexterity saving throw against a fire-based effect. Glows faintly warm near dragonkind or open flame.
-    2. Potion of Draconic Sight
+    2. Potion of Draconic Sight:
         A murky violet potion with flecks of gold. Grants darkvision out to 60 feet for 1 hour. If the creature already has darkvision, it increases by 30 feet and you can see through magical darkness for 10 minutes of that hour.
-    3. Cloak of Scales (Wondrous Item, Uncommon)
+    3. Cloak of Scales (Wondrous Item, Uncommon):
         A patchwork cloak made from discarded dragon scale fragments. Once per long rest, use a reaction to gain resistance to one elemental damage type (acid, cold, fire, lightning, or poison) for 1 minute. Only works while the wearer is below half HP.
-    4. Whisperfang Dagger (Weapon, Uncommon) 
+    4. Whisperfang Dagger (Weapon, Uncommon):
         A finely made silvered dagger with a black dragon motif. On hit, once per long rest, it can deal an extra 1d4 poison damage, and the target must succeed on a DC 12 Constitution save or be silenced (no verbal components) until the end of their next turn.
+- 2 potions
+- 150 gold pieces (payment from Nighthill for our help with Sanctuary)
+- 2 mid-level cultist uniforms
+- Sickle of Sporegrowth: Weapon (sickle), uncommon (requires attunement by a druid). 
+    This wickedly curved blade is dark iron inlaid with veins of mycelium that faintly glow in dim light. Its handle is wrapped in living moss, always slightly damp. The sickle hums with the cycle of life and death, thriving in rot and renewal. You gain a +1 bonus to attack and damage rolls made with this magic weapon.While attuned, whenever you reduce a creature to 0 hit points with this weapon, a puff of harmless spores releases in a 5-foot radius around you. Any plant life in the area briefly sprouts tiny mushrooms. If you are a Circle of Spores druid, once per long rest you may empower your Halo of Spores feature, dealing maximum damage instead of rolling dice for one trigger.
 
 
 # Session Notes

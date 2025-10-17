@@ -25,9 +25,10 @@
 
 
 ## Other
-- Lorn Rennic
+- Lorn Rennic: a minor noble of forest elf ancestry with influential ties to the town of Oakvale. We were hired to defend him on his journey to town, with disastrous results.
 - Scampers: a kobold who defected to our side and is now our ally
 
+-------------------------
 
 # Items Gained
 

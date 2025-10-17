@@ -19,7 +19,7 @@
     ],
     "background": "sage",
     "HP": {
-        "current": 24,
+        "current": 2,
         "max": 25,
         "temp": 0
     },
@@ -198,7 +198,7 @@
         "action type": "1 reaction",
         "effect": "resistance to damage for triggering attack",
         "number of uses": "number up to Charisma modifier",
-        "number of uses remaining": 3
+        "number of uses remaining": 1
     },
     "reapers_blade": {
         "name": "reaper's blade",
@@ -210,7 +210,7 @@
             "1 bonus action": "move up to 20ft and attack"
         },
         "number of uses": "number up to Charisma modifier",
-        "number of uses remaining": 3
+        "number of uses remaining": 1
     },
     "dark_tear": {
         "name": "dark tear",
@@ -470,7 +470,7 @@
                 ],
                 "spell slots": {
                     "1st-level": {
-                        "available": 2,
+                        "available": 1,
                         "maximum": 2
                     }
                 }

@@ -305,7 +305,29 @@ soveliss.cast_spell('ice knife')
 soveliss.cast_spell('hex')
 soveliss.take_damage(1)
 
+# 9/26/2025 Session
+soveliss.set_temp_HP(8)  # Soveliss uses fiendish vigor for 8 temp HP
+soveliss.use_item('potion of minor healing')  # gave Thalia healing potion
 
+# 10/3/2025 Session
+soveliss.take_long_rest()
+soveliss.set_temp_HP(5)
+soveliss.use_reapers_blade()
+soveliss.use_reapers_blade()
+soveliss.cast_spell('chaos bolt')
+soveliss.cast_spell('magic missile')
+soveliss.add_to_inventory('potion of minor healing', 2)    # already had potion from before, total 2
+soveliss.cast_spell('magic missile')
+soveliss.take_damage(6)
+soveliss.take_damage(4)
+soveliss.use_shadow_armor()
+soveliss.take_damage(11)
+soveliss.use_shadow_armor()
+soveliss.take_damage(7)
+# tides of chaos used
+
+# 10/17/2025 Session
+# USE FIENDISH VIGOR AND GET HEALED SOMEHOW (Titus or healing potions)
 
 
 

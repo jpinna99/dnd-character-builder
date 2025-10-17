@@ -198,9 +198,16 @@ fetch('soveliss-stats.json')
             const infoContainer = document.getElementById('info-container');
             infoContainer.innerHTML = '';
             const newInfo = document.createElement('div');
-            const SovBoons = document.createElement('p');
-            SovBoons.innerHTML = JSON.stringify(data.boons, null, 2);
-            newInfo.appendChild(SovBoons);
+            const parsedBoonData = JSON.parse(JSON.stringify(data["boons"]));
+            for (let boon of parsedBoonData) {
+                let boondata = document.createElement('p');
+                boondata.innerHTML = JSON.stringify(boon, null, 2);
+                newInfo.appendChild(boondata);
+                let spacer = document.createElement('p');
+                spacer.style.marginBottom = '2px';
+                spacer.innerHTML = "------";
+                newInfo.appendChild(spacer);
+            }
             infoContainer.appendChild(newInfo);
         })
 

@@ -1,14 +1,15 @@
 # List of Known Characters
 ## Oakvale
-- Vorath: blue dragonborn blacksmith at the Ironclad Hearth who asks us to retrieve a hammer from the Mystic Cavern. He is the man who defeated death  
-- Bramblin: A Blade gnome who we met in an inn and gave us information and rendevous point to meet Vorath. We encounter him again in the raider's camp where he is a prisoner and near death.
-- Varis: A Blade tiefling who hired us to defend Lord Rennic, then gave us another chance to prove ourselves
+- Vorath: member of the Blades, blue dragonborn blacksmith at the Ironclad Hearth who asks us to retrieve a hammer from the Mystic Cavern. He is the man who defeated death  
+- Bramblin: A Blades gnome who we met in an inn and gave us information and rendevous point to meet Vorath. We encounter him again in the raider's camp where he is a prisoner and near death.
+- Varis: A Blades tiefling who hired us to defend Lord Rennic, then gave us another chance to prove ourselves
 
 ## Greenest
 - Thorgar Ironvein: wound up in Greenest with his group on a mission commissioned by the Slayers Take (monster hunting guild) to kill a hag, but got trapped here in Greenest by the siege on the town.
 - Escobert the Red: red-headed dwarf who works for Governor Nighthill in Greenest. A military expert and competent fighter, Thalia recognized him when they met
 - Governor Nighthill: leader of Greenest. Pays us to find out about raider's camp. Gives us use of safe space for home base.
 - Priest Aeden: priest of the Temple of Chauntea
+- Nesim Waladra: injured monk who informs us that her brother is missing (Leosin)
 
 ## Roaches
 - Thedra: female gnome
@@ -16,38 +17,61 @@
 - Snuffy: male kenku
 - Reylynn: female ranger
 
+## Raider's Camp
+- Daereth: a shapeshifter Hildy stabilized while he was a drake. He later helps us before/during the Dragon Nursery escapades. We send him to Greenest after he gets poisoned in the nursery
+- Grakthar The Green – Son of the Swamp, Claw of the Queen: half-dragon who drunkenly challenges Titus to a fight at the camp, beats Titus's ass and becomes friendly toward him
+- Leosin Waladra: brother of Nesim (who we met in Greenest), being held prisoner in the raider's camp, who Thalia meets when she is shackled next to him
 
 ## Enemies
 - Velthis the Mad Elf Wizard: an evil, ruthless wizard who Thalia witnessed slaughter thousands of dwarves. Not a cultist, but is in the employ of the cult
 - Rezmir: black half-dragon, leader of the raider's camp (or entire cult)
 - Langdedrosa Cyanwrath: blue half-dragon
 - Furlam Mondath: the Wearer of Purple
-
+- Lennithon: blue dragon who we fought and then granted us boons if we passed his challenges, then flew away 
 
 ## Other
 - Lorn Rennic: a minor noble of forest elf ancestry with influential ties to the town of Oakvale. We were hired to defend him on his journey to town, with disastrous results.
 - Scampers: a kobold who defected to our side and is now our ally
+- Aurelion: friend of Vorath, old forgetful wizard who appeared to help us during the dragon fight at the keep
 
 -------------------------
 
 # Items Gained
 - 7 minor potions of healing
+- Children's learning book found on path from Oakvale to Greenest
 - Magical items from Vorath: 
     1. Embersteel Band (Wondrous Item, Uncommon):
         A blackened iron ring forged by The Blacksmith.
         While wearing it, once per long rest, you can reroll a failed Dexterity saving throw against a fire-based effect. Glows faintly warm near dragonkind or open flame.
-    2. Potion of Draconic Sight:
+    2. Potion of Draconic Sight (Soveliss):
         A murky violet potion with flecks of gold. Grants darkvision out to 60 feet for 1 hour. If the creature already has darkvision, it increases by 30 feet and you can see through magical darkness for 10 minutes of that hour.
     3. Cloak of Scales (Wondrous Item, Uncommon):
         A patchwork cloak made from discarded dragon scale fragments. Once per long rest, use a reaction to gain resistance to one elemental damage type (acid, cold, fire, lightning, or poison) for 1 minute. Only works while the wearer is below half HP.
     4. Whisperfang Dagger (Weapon, Uncommon):
         A finely made silvered dagger with a black dragon motif. On hit, once per long rest, it can deal an extra 1d4 poison damage, and the target must succeed on a DC 12 Constitution save or be silenced (no verbal components) until the end of their next turn.
 - 2 potions
+- Shield of Holding (Hildy) (Armor, shield): This round wooden shield is framed with silver and fitted with numerous handles on its back, edge, and face. Any creature holding onto one of these handles gains the shield's +2 bonus to its armor class
+- Vial of quicksilver
+- Ring, gold/purple depicting multiheaded dragon
+- 10 gold pieces
 - 150 gold pieces (payment from Nighthill for our help with Sanctuary)
+- medallion
+- Stormpiercer Rifle (Thalia): 
+- Religious artifacts of Chauntea
+- Jewelry
+- Gold pieces 
 - 2 mid-level cultist uniforms
-- Sickle of Sporegrowth: Weapon (sickle), uncommon (requires attunement by a druid). 
+- Sickle of Sporegrowth (Hildy): Weapon (sickle), uncommon (requires attunement by a druid). 
     This wickedly curved blade is dark iron inlaid with veins of mycelium that faintly glow in dim light. Its handle is wrapped in living moss, always slightly damp. The sickle hums with the cycle of life and death, thriving in rot and renewal. You gain a +1 bonus to attack and damage rolls made with this magic weapon.While attuned, whenever you reduce a creature to 0 hit points with this weapon, a puff of harmless spores releases in a 5-foot radius around you. Any plant life in the area briefly sprouts tiny mushrooms. If you are a Circle of Spores druid, once per long rest you may empower your Halo of Spores feature, dealing maximum damage instead of rolling dice for one trigger.
 
+-------------------------
+
+# Boons Gained
+- Soveliss: Boon of the Fearless Heart — Once per long rest, the character can automatically succeed on a saving throw against being frightened
+- Hildy: Boon of the Titan's Grip — Once per long rest, you can add +5 on strength check or saving throws
+- Titus: Boon of the Cat’s Step — Once per long rest you can add +5 feet to movement speed or may re-roll one failed dexterity saving throw per long rest
+
+-------------------------
 
 # Session Notes
 ## 8/1/2025
@@ -70,6 +94,7 @@ The room was full of people enjoying food and drink some light music was playing
 
 Recap of items gained - 7 potions of minor healing (Titus used one so we have six remaining), a magical item for each member of group (to be selected)
 
+-------------------------
 
 
 ## 8/15/2025 Notes
@@ -103,7 +128,7 @@ We met Thedra and the Roaches: Thedra (female gnome, leader), Keel (Goliath), Sn
 
 Items: gold, medallion (Hildy)
 
-
+-------------------------
 
 ## 8/22/2025 Notes
 We go down the Old Tunnel.
@@ -118,6 +143,7 @@ We see that the adult dragon is blue.
 We start heading toward the Sanctuary for next time.
 We level up to Level 3.
 
+-------------------------
 
 ## 8/29/2025 Notes
 We overhear some people discussing the Temple of Chauntea, the Priest Adaen, praying that their agriculture and fields will survive.
@@ -138,7 +164,7 @@ Gov Nighthill and Escobert confirm that the Mill was burned down in the attack. 
 Thorgar shares more about himself: we learn that he ended up in Greenest with his group on a mission commissioned by the Slayers Take (monster hunting guild) to kill a hag, but got trapped here by the attack.
 We then hear the roar of the dragon, which has returned and fired its breath weapon at those on the top of the Keep, and we steel ourselves for battle...
 
-
+-------------------------
 
 ## 9/6/2025 Notes
 We begin by facing off with the dragon (Lennithon).
@@ -154,7 +180,7 @@ Later, Governor Nighthill gives us 2 potions and keys to our new base of operati
 We meet Nesim Waladra, an injured monk who wishes to find their brother Leosin. We agree to help them.
 We end the session in view of an outpost group of enemies, including the mad elf Wizard Velthis, who Thalia recognizes from her past as a merciless slaughterer of thousands of dwarves.
 
-
+-------------------------
 
 ## 9/19/2025 Notes
 We begin the session leaping into battle and surprising the camp. Velthis gets away, but we kill everyone else except for one cultist who we interrogate for information. Upon doing so, we learn about:
@@ -171,7 +197,7 @@ Thalia is handed a whip and told to do guard duty.
 Hildy is asked to help with healing someone.
 The group splits in two and goes off (Thalia/Titus & Hildy/Soveliss).
 
-
+-------------------------
 
 ## 9/26/2025 Notes
 Hildy successfully heals the drake and Soveliss detects that this drake is not what it seems.
@@ -184,7 +210,7 @@ We successfully sneakily break the locks and sneak away, hiding in the Out Cove.
 We learn that the shapeshifter is named Daereth and he was created by the mad elf Wizard Velthis.
 We learn that there are likely dragon eggs in the cave in the back of the camp. They are trying to bring Tiamat back.
 
-
+-------------------------
 
 ## 10/3/2025 Notes
 The start of a dungeon: The Dragon Eggs Cave
@@ -200,3 +226,7 @@ We get into a fight with more kobolds and win. We send Daereth back to Greenest.
 We take hostages and learn that Cyanwrath is up ahead, there are eggs in the dungeon, the Wearer of Purple (Furlam Mondath) is somewhere there as well.
 We meet Cyanwrath and his goons, who challenges Hildy to a one-on-one, but Soveliss immediately casts Magic Missile, provoking group battle. We win, but are worse for wear.
 Hildy gains the Sickle of Sporegrowth.
+
+-------------------------
+
+## 10/3/2025 Notes

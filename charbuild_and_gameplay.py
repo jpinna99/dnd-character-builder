@@ -368,14 +368,14 @@ soveliss.gain_inspiration('1d8')
 soveliss.add_to_inventory('wand of wonder', 1)
 soveliss.use_reapers_blade()
 # tides of chaos used
+# tides of chaos regained (Soveliss shed light for 1 minute)
 soveliss.cast_spell('ice knife')
 soveliss.cast_spell('hex')
 soveliss.use_inspiration()
-soveliss.cast_spell('magic missile')
+soveliss.cast_spell('magic missile')   # regain HP at start of each turn 
 
 
-
-
+# 10/24/2025 Session
 # Level up Soveliss to Warlock 3 / Sorcerer 1
 # soveliss.level_up_4()
 # pact_of_the_talisman = {

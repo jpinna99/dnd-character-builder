@@ -244,21 +244,22 @@ Hildy gains the Sickle of Sporegrowth.
 -------------------------
 
 ## 10/17/2025 Notes
-Wood carving - Well of Dragons, Tiamat.
-We investigate the chest and wood carving, clearly they are trapped.
-We mage hand the chest and noxious gas comes out. We short rest waiting out the gas.
-We free Therma the Kobold who shows us a bunch of rooms (trash pit, draping curtain covering a room, meat locker, tells us of secret passage to eggs and wearer of purple).
+We discover a wood carving depicting a Well of Dragons and Tiamat.
+We investigate the chest and wood carving; clearly they are trapped.
+Soveliss casts mage hand to manipulate the chest and noxious gas comes out. We short rest waiting out the gas.
+We free Therma the Kobold who shows us a bunch of rooms (trash pit, meat locker, she tells us of secret passage to eggs and Wearer of Purple).
 We go to meat locker and find hanging meat and dried blood on floor.
-We get stuff out of the chest, then proceed down the passageway to the eggs.
+We get stuff out of the previously trapped chest, then proceed down the passageway to the eggs. 
 We encounter a roper who we convince to find the meat locker for food. It kills all the kobolds that jump down to battle us.
-Eggs: over 6ft tall. we know they will hatch into wormling. two eggs seem off, they seem like thye won't hatch, they are cold.
-One drake brought us to a third egg. Hildy checks it and discovers that this egg is doing well, it is starting to crack, black talon claw is reaching out.
-The baby black dragon accepts our meat but demands more.
+Eggs: over 6ft tall. we know they will hatch into wormling. Two eggs seem off, they seem like they won't hatch; they are cold.
+One drake brought us to a third egg. Hildy checks it and discovers that this egg is doing well, it is starting to crack, a black talon claw is reaching out.
+The baby black dragon hatches, accepts our meat but demands more.
 Titus attempts to persuade the baby black dragon.
 Soveliss distracts the dragon with meat from attacking the drake that submitted to us.
-Furlam Monday, the Wearer of Purple, approaches taunting us, throwing Daereth's near-dead body towards us.
-We defeat Frulam. We gain a baby dragon friend.
-We find letter meant to be sent to Frulam to Rezmir, providing intel and speaking of items we found (wand and ring).
+Frulam Mondath, the Wearer of Purple, approaches, taunting us, throwing Daereth's near-dead body towards us.
+We defeat Frulam. We gain a baby dragon friend (for now...).
+We find letter meant to be sent by Frulam to Rezmir (or vice versa?), providing intel and speaking of items we found (wand and ring).
 Now we have a choice:
 1. Go to town Leosin suggested.
 2. Continue to where the cult is moving.
+We choose to return to Greenest with our new wormling pet, but must formulate a plan before attempting to reenter so as to not provoke chaos and terrify people with our new dragon friend.

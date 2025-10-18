@@ -26,13 +26,14 @@
 - Velthis the Mad Elf Wizard: an evil, ruthless wizard who Thalia witnessed slaughter thousands of dwarves. Not a cultist, but is in the employ of the cult
 - Rezmir: black half-dragon, leader of the raider's camp (or entire cult)
 - Langdedrosa Cyanwrath: blue half-dragon
-- Furlam Mondath: the Wearer of Purple
+- Furlam Mondath: the Wearer of Purple, fought us after we hatched the black dragon wormling
 - Lennithon: blue dragon who we fought and then granted us boons if we passed his challenges, then flew away 
 
 ## Other
 - Lorn Rennic: a minor noble of forest elf ancestry with influential ties to the town of Oakvale. We were hired to defend him on his journey to town, with disastrous results.
 - Scampers: a kobold who defected to our side and is now our ally
 - Aurelion: friend of Vorath, old forgetful wizard who appeared to help us during the dragon fight at the keep
+- Therma: a kobold we spared in the dragon nursery who showed us some rooms and we let live and go with her gems
 
 -------------------------
 
@@ -63,6 +64,18 @@
 - 2 mid-level cultist uniforms
 - Sickle of Sporegrowth (Hildy): Weapon (sickle), uncommon (requires attunement by a druid). 
     This wickedly curved blade is dark iron inlaid with veins of mycelium that faintly glow in dim light. Its handle is wrapped in living moss, always slightly damp. The sickle hums with the cycle of life and death, thriving in rot and renewal. You gain a +1 bonus to attack and damage rolls made with this magic weapon.While attuned, whenever you reduce a creature to 0 hit points with this weapon, a puff of harmless spores releases in a 5-foot radius around you. Any plant life in the area briefly sprouts tiny mushrooms. If you are a Circle of Spores druid, once per long rest you may empower your Halo of Spores feature, dealing maximum damage instead of rolling dice for one trigger.
+- Bunch of fungi — including Honeycomb brown fungus (Hildy) x 2: restores vitality; leaky inkwell; redcap; mighty heart truffle; P. Aquatica: grants ability to breathe underwater for 10 minutes
+- Pouch of gems (found in dragon egg dungeon)
+- Meat from meat locker room in dungeon
+- String of pearls
+- Gold and sapphire ring
+- Pouch containing about 6 polished stones
+- Wand of wonder
+- Ring of protection
+- Dragon cult scabbard
+- Coins, gems (gems worth 100 gp)
+- Halberd from Purple lady
+- Purple lady's uniform
 
 -------------------------
 
@@ -230,4 +243,22 @@ Hildy gains the Sickle of Sporegrowth.
 
 -------------------------
 
-## 10/3/2025 Notes
+## 10/17/2025 Notes
+Wood carving - Well of Dragons, Tiamat.
+We investigate the chest and wood carving, clearly they are trapped.
+We mage hand the chest and noxious gas comes out. We short rest waiting out the gas.
+We free Therma the Kobold who shows us a bunch of rooms (trash pit, draping curtain covering a room, meat locker, tells us of secret passage to eggs and wearer of purple).
+We go to meat locker and find hanging meat and dried blood on floor.
+We get stuff out of the chest, then proceed down the passageway to the eggs.
+We encounter a roper who we convince to find the meat locker for food. It kills all the kobolds that jump down to battle us.
+Eggs: over 6ft tall. we know they will hatch into wormling. two eggs seem off, they seem like thye won't hatch, they are cold.
+One drake brought us to a third egg. Hildy checks it and discovers that this egg is doing well, it is starting to crack, black talon claw is reaching out.
+The baby black dragon accepts our meat but demands more.
+Titus attempts to persuade the baby black dragon.
+Soveliss distracts the dragon with meat from attacking the drake that submitted to us.
+Furlam Monday, the Wearer of Purple, approaches taunting us, throwing Daereth's near-dead body towards us.
+We defeat Frulam. We gain a baby dragon friend.
+We find letter meant to be sent to Frulam to Rezmir, providing intel and speaking of items we found (wand and ring).
+Now we have a choice:
+1. Go to town Leosin suggested.
+2. Continue to where the cult is moving.

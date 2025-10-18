@@ -357,6 +357,22 @@ soveliss.set_temp_HP(6) # Soveliss uses fiendish vigor for 6 temp HP
 soveliss.wealth = {"personal": {"gold": 10},
                    "group": {"gold": 210}
                    }
+soveliss.gain_inspiration('1d4')
+soveliss.use_item('potion of minor healing')
+soveliss.heal(5)
+soveliss.take_short_rest()
+soveliss.heal(11) # uses all three hit dice
+soveliss.use_item('potion of minor healing')
+soveliss.heal(7)
+soveliss.gain_inspiration('1d8')
+soveliss.add_to_inventory('wand of wonder', 1)
+soveliss.use_reapers_blade()
+# tides of chaos used
+soveliss.cast_spell('ice knife')
+soveliss.cast_spell('hex')
+soveliss.use_inspiration()
+soveliss.cast_spell('magic missile')
+
 
 
 

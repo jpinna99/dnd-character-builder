@@ -19,7 +19,7 @@
     ],
     "background": "sage",
     "HP": {
-        "current": 2,
+        "current": 25,
         "max": 25,
         "temp": 6
     },
@@ -130,8 +130,9 @@
         "set of common clothes": 1,
         "pouch containing 10 gp": 1,
         "potion of draconic sight": 1,
-        "potion of minor healing": 2,
-        "children's learning book (found on path to greenest)": 1
+        "potion of minor healing": 0,
+        "children's learning book (found on path to greenest)": 1,
+        "wand of wonder": 1
     },
     "wealth": {
         "personal": {
@@ -215,7 +216,7 @@
             "1 bonus action": "move up to 20ft and attack"
         },
         "number of uses": "number up to Charisma modifier",
-        "number of uses remaining": 1
+        "number of uses remaining": 0
     },
     "dark_tear": {
         "name": "dark tear",
@@ -475,7 +476,7 @@
                 ],
                 "spell slots": {
                     "1st-level": {
-                        "available": 1,
+                        "available": 0,
                         "maximum": 2
                     }
                 }

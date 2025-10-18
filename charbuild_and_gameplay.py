@@ -197,6 +197,13 @@ class Soveliss(Warlock, Reaper, Sage, Elf, Drow):
             if spell['name'].lower() == spell_to_replace.lower():
                 self.spells[spell_class]['spells']['spell list'].remove(spell)
                 break
+    
+    def use_talisman(self):
+        if self.boons["Pact of the Talisman"]["Number of Uses Remaining"] > 0:
+            self.boons["Pact of the Talisman"]["Number of Uses Remaining"] -= 1
+            print(f"You have {self.boons["Pact of the Talisman"]["Number of Uses Remaining"]} uses remaining.")
+        else:
+            print("You have no more uses of this feature.")
 
 def isolate_sorcerer_spells_for_soveliss():
     spell_list = []
@@ -313,7 +320,9 @@ soveliss.cast_spell('chaos bolt')
 soveliss.cast_spell('magic missile')
 soveliss.add_to_inventory('potion of minor healing', 2)
 soveliss.cast_spell('hex')
-soveliss.__dict__['boons'] = [{"Boon of the Fearless Heart": "Once per long rest, the character can automatically succeed on a saving throw against being frightened."}]
+soveliss.__dict__['boons'] = {
+            "Boon of the Fearless Heart": "<p>Once per long rest, the character can automatically succeed on a saving throw against being frightened.<p>"
+            }
 soveliss.take_long_rest()
 
 # 9/19/2025 Session
@@ -344,14 +353,21 @@ soveliss.take_damage(7)
 
 # 10/17/2025 Session
 # USE FIENDISH VIGOR AND GET HEALED SOMEHOW (Titus or healing potions)
-
+soveliss.set_temp_HP(6) # Soveliss uses fiendish vigor for 6 temp HP
+soveliss.wealth = {"personal": {"gold": 10},
+                   "group": {"gold": 210}
+                   }
 
 
 
 # Level up Soveliss to Warlock 3 / Sorcerer 1
 # soveliss.level_up_4()
-# pact_of_the_talisman = {"Pact of the Talisman": "Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest. If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die."}
-# soveliss.__dict__["boons"].append(pact_of_the_talisman)
+# pact_of_the_talisman = {
+#    "Pact of the Talisman": {
+#        "description": "<p>Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest. If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die.<p>", 
+#        "Number of Uses Remaining": soveliss.__dict__["proficiency_bonus"]}}
+# soveliss.__dict__["boons"].update(pact_of_the_talisman)
+# soveliss.use_talisman()
 
 
 

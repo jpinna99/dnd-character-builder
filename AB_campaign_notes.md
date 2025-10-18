@@ -59,7 +59,7 @@
 - Stormpiercer Rifle (Thalia): 
 - Religious artifacts of Chauntea
 - Jewelry
-- Gold pieces 
+- 50 gold pieces
 - 2 mid-level cultist uniforms
 - Sickle of Sporegrowth (Hildy): Weapon (sickle), uncommon (requires attunement by a druid). 
     This wickedly curved blade is dark iron inlaid with veins of mycelium that faintly glow in dim light. Its handle is wrapped in living moss, always slightly damp. The sickle hums with the cycle of life and death, thriving in rot and renewal. You gain a +1 bonus to attack and damage rolls made with this magic weapon.While attuned, whenever you reduce a creature to 0 hit points with this weapon, a puff of harmless spores releases in a 5-foot radius around you. Any plant life in the area briefly sprouts tiny mushrooms. If you are a Circle of Spores druid, once per long rest you may empower your Halo of Spores feature, dealing maximum damage instead of rolling dice for one trigger.

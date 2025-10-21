@@ -26,7 +26,7 @@
 - Velthis the Mad Elf Wizard: an evil, ruthless wizard who Thalia witnessed slaughter thousands of dwarves. Not a cultist, but is in the employ of the cult
 - Rezmir: black half-dragon, leader of the raider's camp (or entire cult)
 - Langdedrosa Cyanwrath: blue half-dragon
-- Furlam Mondath: the Wearer of Purple, fought us after we hatched the black dragon wormling
+- Furlam Mondath: the Wearer of Purple, fought us after we hatched the black dragon wyrmling
 - Lennithon: blue dragon who we fought and then granted us boons if we passed his challenges, then flew away 
 
 ## Other
@@ -244,14 +244,14 @@ Hildy gains the Sickle of Sporegrowth.
 -------------------------
 
 ## 10/17/2025 Notes
-We discover a wood carving depicting a Well of Dragons and Tiamat.
+We discover a wood carving depicting a Well of Dragons and Tiamat. Black dragons seem more prominent.
 We investigate the chest and wood carving; clearly they are trapped.
 Soveliss casts mage hand to manipulate the chest and noxious gas comes out. We short rest in the other room to try and wait out the gas.
-We free Therma the Kobold who shows us a bunch of rooms (trash pit, meat locker, she tells us of secret passage to eggs and Wearer of Purple).
+We free Therma the Kobold who shows us a bunch of rooms (trash pit, meat locker, she tells us of secret passage to eggs and Wearer of Purple). She tells us about the stirges lair (room with all the bats and dead bats on the floor).
 We go to meat locker and find hanging meat and dried blood on floor.
 We get stuff out of the previously trapped chest, then proceed down the passageway to the eggs. 
 We encounter a roper who we convince to find the meat locker for food. It kills all the kobolds that jump down to battle us.
-Eggs: over 6ft tall. we know they will hatch into wormling. Two eggs seem off, they seem like they won't hatch; they are cold.
+Eggs: over 6ft tall. we know they will hatch into wyrmling. Two eggs seem off, they seem like they won't hatch; they are cold.
 One drake brought us to a third egg. Hildy checks it and discovers that this egg is doing well, it is starting to crack, a black talon claw is reaching out.
 The baby black dragon hatches, accepts our meat but demands more.
 Titus attempts to persuade the baby black dragon.
@@ -260,6 +260,6 @@ Frulam Mondath, the Wearer of Purple, approaches with a band of cultists and gua
 We fight and defeat Frulam and her cronies. We gain a baby dragon friend (for now...).
 We find letter meant to be sent by Frulam to Rezmir (or vice versa?), providing intel and speaking of items we found (wand and ring).
 Now we have a choice:
-1. Go to town Leosin suggested.
+1. Go to town Leosin suggested (Elturel).
 2. Continue to where the cult is moving.
-We choose to return to Greenest with our new wormling pet, but must formulate a plan before attempting to reenter so as to not provoke chaos and terrify people with our new dragon friend.
+We choose to return to Greenest with our new wyrmling pet, but must formulate a plan before attempting to reenter so as to not provoke chaos and terrify people with our new dragon friend.
